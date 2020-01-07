@@ -39,7 +39,6 @@ public class StartApplication {
 //		driver.findElement(By.id("com.amazon.mShop.android.shopping:id/skip_sign_in_button")).click();
 //		WebElement element = driver.findElement(By.className("android.widget.EditText"));
 //		element.sendKeys("celular");
-
 //		driver.quit();
 		
 		driver.findElement(By.id("com.android.vending:id/search_bar_hint")).click();
