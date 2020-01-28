@@ -24,8 +24,8 @@ public class StartApplication {
 		capabilities.setCapability("deviceName", "ASUS_X018D");
 		capabilities.setCapability("platformVersion", "8.1.0");
 		capabilities.setCapability("platformName", "Android");
-		capabilities.setCapability("appPackage", "com.android.vending");
-		capabilities.setCapability("appActivity", "com.google.android.finsky.activities.MainActivity");
+		capabilities.setCapability("appPackage", "com.supercell.brawlstars");
+		capabilities.setCapability("appActivity", ".GameApp");
 
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
@@ -40,13 +40,15 @@ public class StartApplication {
 //		WebElement element = driver.findElement(By.className("android.widget.EditText"));
 //		element.sendKeys("celular");
 //		driver.quit();
-		
+
 		driver.findElement(By.id("com.android.vending:id/search_bar_hint")).click();
 		WebElement element = driver.findElement(By.className("android.widget.EditText"));
 		element.sendKeys("Braw Stars");
-		
+
 		driver.findElement(By.id("com.android.vending:id/suggest_text")).click();
-		
+
+		driver.findElementById("com.android.vending:id/right_button").click();
+
 	}
 
 }
