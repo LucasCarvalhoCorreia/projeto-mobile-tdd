@@ -1,4 +1,4 @@
-package com.google.code.gson.projeto_appium;
+package br.com.rsinet.hub_tdd.testes;
 
 import java.net.MalformedURLException;
 import java.net.URL;
