@@ -1,4 +1,4 @@
-package br.com.rsinet.hub_tdd.pageFactory;
+package br.com.rsinet.hub_tdd.pageObject;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;

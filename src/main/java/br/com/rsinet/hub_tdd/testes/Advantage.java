@@ -1,10 +1,10 @@
 package br.com.rsinet.hub_tdd.testes;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import br.com.rsinet.hub_tdd.utils.DriverFactory;
 
@@ -12,7 +12,7 @@ public class Advantage {
 	
 	private WebDriver driver;
 
-	@Before
+	@BeforeMethod
 	public void iniciaTeste() throws Exception {
 		driver = DriverFactory.iniciaApp();
 	}
@@ -31,9 +31,9 @@ public class Advantage {
 		
 	}
 	
-	@After
+	@AfterMethod
 	public void finalizaTeste() {
-//		driver.quit();
+		driver.quit();
 	}
 
 }

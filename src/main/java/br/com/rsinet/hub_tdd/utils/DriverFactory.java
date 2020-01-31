@@ -13,6 +13,7 @@ public class DriverFactory {
 
 	public static WebDriver driver;
 
+	@SuppressWarnings("rawtypes")
 	public static WebDriver iniciaApp() throws Exception {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
