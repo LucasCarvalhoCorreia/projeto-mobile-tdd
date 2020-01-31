@@ -3,23 +3,19 @@ package br.com.rsinet.hub_tdd.utils;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.android.AndroidDriver;
 
 public class DriverFactory {
 
-	public static WebDriver driver;
+	public static AndroidDriver<WebElement> driver;
 
-	@SuppressWarnings("rawtypes")
-	public static WebDriver iniciaApp() throws Exception {
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	public static AndroidDriver<WebElement> iniciaApp() throws Exception {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
-		capabilities.setCapability("deviceName", "ASUS_X018D");
-		capabilities.setCapability("platformVersion", "8.1.0");
-		capabilities.setCapability("platformName", "Android");
+		capabilities.setCapability("deviceName", "Celular");
 		capabilities.setCapability("appPackage", "com.Advantage.aShopping");
 		capabilities.setCapability("appActivity", ".SplashActivity");
 
@@ -30,7 +26,7 @@ public class DriverFactory {
 	}
 
 	/* Método responsavel por fechar o browzer. */
-	public static void fechaApp(WebDriver driver) {
+	public static void fechaApp(AndroidDriver<WebElement> driver) {
 		if (driver != null) {
 			driver.close();
 			driver.quit();
