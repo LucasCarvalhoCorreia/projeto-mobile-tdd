@@ -20,18 +20,15 @@ public class DriverFactory {
 		capabilities.setCapability("appActivity", ".SplashActivity");
 
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		return driver;
 	}
 
 	/* Método responsavel por fechar o browzer. */
-	public static void fechaApp(AndroidDriver<WebElement> driver) {
-		if (driver != null) {
-			driver.close();
+	public static AndroidDriver<WebElement> fechaApp() {
 			driver.quit();
-			driver = null;
-		}
 
+			return driver;
 	}
 }
