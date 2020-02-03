@@ -1,137 +1,162 @@
 package br.com.rsinet.hub_tdd.pageObject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.appium.java_client.MobileElement;
 
 public class CadastroPage {
-
-	/* Area onde são encontrados os elementos na pagina de cadastro. */
-
-	/*
-	 * Encontra os Editores de Texto, Botões, ComboBox e CheckBox para o campo
-	 * correspondente ao nome da variável e atribui na mesma.
-	 */
-	/* Utilizado para preencher as informações de cadastro. */
-	@FindBy(how = How.NAME, using = "usernameRegisterPage")
-	private WebElement txt_UserName;
-
-	@FindBy(how = How.NAME, using = "emailRegisterPage")
-	private WebElement txt_Email;
-
-	@FindBy(how = How.NAME, using = "passwordRegisterPage")
-	private WebElement txt_Password;
-
-	@FindBy(how = How.NAME, using = "confirm_passwordRegisterPage")
-	private WebElement txt_ConfirmPassword;
-
-	@FindBy(how = How.NAME, using = "first_nameRegisterPage")
-	private WebElement txt_FirstName;
-
-	@FindBy(how = How.NAME, using = "last_nameRegisterPage")
-	private WebElement txt_LastName;
-
-	@FindBy(how = How.NAME, using = "phone_numberRegisterPage")
-	private WebElement txt_Telefone;
-
-	@FindBy(how = How.NAME, using = "countryListboxRegisterPage")
-	private WebElement combo_Pais;
-
-	@FindBy(how = How.NAME, using = "cityRegisterPage")
-	private WebElement txt_Cidade;
-
-	@FindBy(how = How.NAME, using = "addressRegisterPage")
-	private WebElement txt_Endereco;
-
-	@FindBy(how = How.NAME, using = "state_/_province_/_regionRegisterPage")
-	private WebElement txt_Estado;
-
-	@FindBy(how = How.NAME, using = "postal_codeRegisterPage")
-	private WebElement txt_Cep;
-
-	@FindBy(how = How.NAME, using = "allowOffersPromotion")
-	private WebElement check_Offers;
-
-	@FindBy(how = How.NAME, using = "i_agree")
-	private WebElement check_Agree;
-
-	@FindBy(how = How.ID, using = "register_btnundefined")
-	private WebElement bt_Registrar;
-
-	/* Elemento utilizado para receber o status da confirmação da senha. */
-	@FindBy(how = How.XPATH, using = "//*[@id=\"formCover\"]/div[1]/div[2]/sec-view[2]/div/label")
-	public WebElement not_Password;
-
-	/* Elemento utilizado para receber o nome de usuário logado. */
-	@FindBy(how = How.XPATH, using = "//*[@id=\"menuUserLink\"]/span")
-	public WebElement user_Logon;
-
-	/*
-	 * Método utilizado para receber as informações da massa de dados e preencher o
-	 * formulario.
-	 */
-	public void cadastrarUsuario(String txt_UserName, String txt_Email, String txt_Password, String txt_ConfirmPassword,
-			String txt_FirstName, String txt_LastName, String txt_Telefone, String combo_Pais, String txt_Cidade,
-			String txt_Endereco, String txt_Estado, String txt_Cep) {
-
-		this.txt_UserName.sendKeys(txt_UserName);
-		this.txt_Email.sendKeys(txt_Email);
-		this.txt_Password.sendKeys(txt_Password);
-		this.txt_ConfirmPassword.sendKeys(txt_ConfirmPassword);
-		this.txt_FirstName.sendKeys(txt_FirstName);
-		this.txt_LastName.sendKeys(txt_LastName);
-		this.txt_Telefone.sendKeys(txt_Telefone);
-		new Select(this.combo_Pais).selectByVisibleText(combo_Pais);
-		this.txt_Cidade.sendKeys(txt_Cidade);
-		this.txt_Endereco.sendKeys(txt_Endereco);
-		this.txt_Estado.sendKeys(txt_Estado);
-		this.txt_Cep.sendKeys(txt_Cep);
+	
+	private WebDriver driver;
+	
+	public CadastroPage(WebDriver driver) {
+		this.driver = driver;
 	}
-
-	/* Método utilizado para preencher o campo de confirmação de senha. */
-	public void mudaSenha(String txt_ChangePassword) {
-		this.txt_ConfirmPassword.sendKeys(txt_ChangePassword);
+	
+	private MobileElement encontraUserName() {
+		MobileElement userName = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.EditText"));
+		return userName;
 	}
-
-	/* Método utilizado para limpar o campo de confirmação de senha. */
-	public void clear() {
-		this.txt_ConfirmPassword.clear();
+	
+	public void preencheUserName(String et_UserName) {
+		encontraUserName().click();
+		encontraUserName().sendKeys(et_UserName);
 	}
-
-	/*
-	 * Método utilizado para clicar no campo senha para que a notificação de erro na
-	 * confirmação de senha apareça.
-	 */
-	public void clicaPassword() {
-		this.txt_Password.click();
+	
+	
+	private MobileElement encontraEmail() {
+		MobileElement email = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.EditText"));
+		return email;
 	}
-
-	/* Método utilizado para clicar no check box de ofertas. */
-	public void check_Offers() {
-		this.check_Offers.click();
+	
+	public void preencheEmail(String et_Email) {
+		encontraEmail().click();		
+		encontraEmail().sendKeys(et_Email);
 	}
-
-	/* Método utilizado para clicar no check box de termos de serviço. */
-	public void check_Agree() {
-		this.check_Agree.click();
+	
+	private MobileElement encontraPassword() {
+		MobileElement password = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.widget.RelativeLayout/android.widget.EditText"));
+		return password;
 	}
-
-	/* Método utilizado para clicar no botão de registrar. */
-	public void bt_Registrar() {
-		this.bt_Registrar.click();
+	
+	public void preenchePassword(String et_Password) {
+		encontraPassword().click();		
+		encontraPassword().sendKeys(et_Password);
 	}
-
-	/*
-	 * Método utilizado para aguardar que o elemento que aparece o nome de usuario
-	 * apareça para coletar a informação.
-	 */
-	public void pega_UserLogon(WebDriver driver) {
-		WebDriverWait wait = new WebDriverWait(driver, 60);
-		wait.until(ExpectedConditions.elementToBeClickable(this.user_Logon));
+	
+	private MobileElement encontraConfirmPassword() {
+		MobileElement confirmPassword = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[4]/android.widget.RelativeLayout/android.widget.EditText"));
+		return confirmPassword;
 	}
-
+	
+	public void preencheConfirmPassword(String et_ConfirmPassword) {
+		encontraConfirmPassword().click();		
+		encontraConfirmPassword().sendKeys(et_ConfirmPassword);
+	}
+	
+	private MobileElement encontraFirstName() {
+		MobileElement firstName = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[1]/android.widget.EditText"));
+		return firstName;
+	}
+	
+	public void preencheFirstName(String et_FirstName) {
+		encontraFirstName().click();		
+		encontraFirstName().sendKeys(et_FirstName);
+	}
+	
+	private MobileElement encontraLastName() {
+		MobileElement lastName = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[2]/android.widget.EditText"));
+		return lastName;
+	}
+	
+	public void preencheLastName(String et_LastName) {
+		encontraLastName().click();		
+		encontraLastName().sendKeys(et_LastName);
+	}
+	
+	private MobileElement encontraPhoneNumber() {
+		MobileElement phoneNumber = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.EditText"));
+		return phoneNumber;
+	}
+	
+	public void preenchePhoneNumber(String et_PhoneNumber) {
+		encontraPhoneNumber().click();		
+		encontraPhoneNumber().sendKeys(et_PhoneNumber);
+	}
+	
+	private MobileElement encontraCountry() {
+		MobileElement country = (MobileElement) driver.findElement(By.id("com.Advantage.aShopping:id/linearLayoutCountry"));
+		return country;
+	}
+	
+	public void clicaCountry() {
+		encontraCountry().click();
+	}
+	
+	private MobileElement encontraBrazil() {
+		MobileElement brazil = (MobileElement) driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[6]"));
+		return brazil;
+	}
+	
+	public void clicaBrazil() {
+		encontraBrazil().click();	
+	}
+	
+	private MobileElement encontraState() {
+		MobileElement state = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.EditText"));
+		return state;
+	}
+	
+	public void preencheState(String et_State) {
+		encontraState().click();	
+		encontraState().sendKeys(et_State);	
+	}
+	
+	private MobileElement encontraAddress() {
+		MobileElement address = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.EditText"));
+		return address;
+	}
+	
+	public void preencheAddress(String et_Address) {
+		encontraAddress().click();	
+		encontraAddress().sendKeys(et_Address);
+	}
+	
+	private MobileElement encontraCity() {
+		MobileElement city = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText"));
+		return city;
+	}
+	
+	public void preencheCity(String et_City) {
+		encontraCity().click();	
+		encontraCity().sendKeys(et_City);
+	}
+	
+	private MobileElement encontraPostalCode() {
+		MobileElement postalCode = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[2]/android.widget.EditText"));
+		return postalCode;
+	}
+	
+	public void preenchePostalCode(String et_Postalode) {
+		encontraPostalCode().click();	
+		encontraPostalCode().sendKeys(et_Postalode);
+	}
+	
+	private MobileElement encontraCheckOffers() {
+		MobileElement checkOffers = (MobileElement) driver.findElement(By.id("com.Advantage.aShopping:id/checkBoxRecieveOffers"));
+		return checkOffers;
+	}
+	
+	public void clicaCheckOffers() {
+		encontraCheckOffers().click();
+	}
+	
+	private MobileElement encontraRegister() {
+		MobileElement btRegister = (MobileElement) driver.findElement(By.id("com.Advantage.aShopping:id/buttonRegister"));
+		return btRegister;
+	}
+	
+	public void clicaRegister() {
+		encontraRegister().click();	
+	}
 }

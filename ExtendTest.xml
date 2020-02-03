@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Teste de automação em TDD com TestNG">
+	<test name="Teste de Cadastro">
+		<classes>
+			<class name="br.com.rsinet.hub_tdd.testes.Cadastro" />
+		</classes>
+	</test>
+	
+</suite>

@@ -1,93 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="69641" started-at="2020-02-02T20:31:05 BRT" finished-at="2020-02-02T20:32:15 BRT">
+  <suite name="Default suite" duration-ms="103052" started-at="2020-02-03T15:44:43 BRT" finished-at="2020-02-03T15:46:26 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="69641" started-at="2020-02-02T20:31:05 BRT" finished-at="2020-02-02T20:32:15 BRT">
-      <class name="br.com.rsinet.hub_tdd.testes.Advantage">
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Advantage@64729b1e]" name="iniciaTeste" is-config="true" duration-ms="18058" started-at="2020-02-02T20:31:05 BRT" finished-at="2020-02-02T20:31:23 BRT">
+    <test name="Default test" duration-ms="103052" started-at="2020-02-03T15:44:43 BRT" finished-at="2020-02-03T15:46:26 BRT">
+      <class name="br.com.rsinet.hub_tdd.testes.Cadastro">
+        <test-method status="PASS" signature="extendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="extendReport" is-config="true" duration-ms="92" started-at="2020-02-03T15:44:43 BRT" finished-at="2020-02-03T15:44:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extendReport -->
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="iniciaTeste" is-config="true" duration-ms="13281" started-at="2020-02-03T15:44:43 BRT" finished-at="2020-02-03T15:44:56 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniciaTeste -->
-        <test-method status="PASS" signature="testeDeCadastro()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Advantage@64729b1e]" name="testeDeCadastro" duration-ms="51485" started-at="2020-02-02T20:31:23 BRT" finished-at="2020-02-02T20:32:15 BRT">
+        <test-method status="PASS" signature="testeDeCadastroFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="testeDeCadastroFalha" duration-ms="36739" started-at="2020-02-03T15:44:56 BRT" finished-at="2020-02-03T15:45:33 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testeDeCadastro -->
-        <test-method status="FAIL" signature="finalizaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Advantage@64729b1e]" name="finalizaTeste" is-config="true" duration-ms="50" started-at="2020-02-02T20:32:15 BRT" finished-at="2020-02-02T20:32:15 BRT">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-QI1A0TH', ip: '192.168.25.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: .SplashActivity, appPackage: com.Advantage.aShopping, databaseEnabled: false, desired: {appActivity: .SplashActivity, appPackage: com.Advantage.aShopping, deviceName: ASUS_X018D, platformName: android}, deviceApiLevel: 27, deviceManufacturer: asus, deviceModel: ASUS_X018D, deviceName: 192.168.25.215:5555, deviceScreenDensity: 480, deviceScreenSize: 1080x2160, deviceUDID: 192.168.25.215:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 1956, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 7d93b378-fce8-41df-9a99-52422259fc2d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-QI1A0TH', ip: '192.168.25.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: .SplashActivity, appPackage: com.Advantage.aShopping, databaseEnabled: false, desired: {appActivity: .SplashActivity, appPackage: com.Advantage.aShopping, deviceName: ASUS_X018D, platformName: android}, deviceApiLevel: 27, deviceManufacturer: asus, deviceModel: ASUS_X018D, deviceName: 192.168.25.215:5555, deviceScreenDensity: 480, deviceScreenSize: 1080x2160, deviceUDID: 192.168.25.215:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 1956, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 7d93b378-fce8-41df-9a99-52422259fc2d
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at br.com.rsinet.hub_tdd.utils.DriverFactory.fechaApp(DriverFactory.java:31)
-at br.com.rsinet.hub_tdd.testes.Advantage.finalizaTeste(Advantage.java:133)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- testeDeCadastroFalha -->
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="finalizaTeste" is-config="true" duration-ms="1965" started-at="2020-02-03T15:45:33 BRT" finished-at="2020-02-03T15:45:35 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testeDeCadastroFalha status=SUCCESS method=Cadastro.testeDeCadastroFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaTeste -->
-      </class> <!-- br.com.rsinet.hub_tdd.testes.Advantage -->
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="iniciaTeste" is-config="true" duration-ms="12710" started-at="2020-02-03T15:45:35 BRT" finished-at="2020-02-03T15:45:48 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniciaTeste -->
+        <test-method status="PASS" signature="testeDeCadastroSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="testeDeCadastroSucesso" duration-ms="36438" started-at="2020-02-03T15:45:48 BRT" finished-at="2020-02-03T15:46:24 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testeDeCadastroSucesso -->
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="finalizaTeste" is-config="true" duration-ms="1802" started-at="2020-02-03T15:46:24 BRT" finished-at="2020-02-03T15:46:26 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testeDeCadastroSucesso status=SUCCESS method=Cadastro.testeDeCadastroSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalizaTeste -->
+      </class> <!-- br.com.rsinet.hub_tdd.testes.Cadastro -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
