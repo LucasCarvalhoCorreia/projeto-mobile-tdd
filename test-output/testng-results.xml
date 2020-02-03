@@ -1,44 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="103052" started-at="2020-02-03T15:44:43 BRT" finished-at="2020-02-03T15:46:26 BRT">
+  <suite name="Default suite" duration-ms="55846" started-at="2020-02-03T16:09:01 BRT" finished-at="2020-02-03T16:09:57 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="103052" started-at="2020-02-03T15:44:43 BRT" finished-at="2020-02-03T15:46:26 BRT">
+    <test name="Default test" duration-ms="55846" started-at="2020-02-03T16:09:01 BRT" finished-at="2020-02-03T16:09:57 BRT">
       <class name="br.com.rsinet.hub_tdd.testes.Cadastro">
-        <test-method status="PASS" signature="extendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="extendReport" is-config="true" duration-ms="92" started-at="2020-02-03T15:44:43 BRT" finished-at="2020-02-03T15:44:43 BRT">
+        <test-method status="PASS" signature="extendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="extendReport" is-config="true" duration-ms="94" started-at="2020-02-03T16:09:01 BRT" finished-at="2020-02-03T16:09:01 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extendReport -->
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="iniciaTeste" is-config="true" duration-ms="13281" started-at="2020-02-03T15:44:43 BRT" finished-at="2020-02-03T15:44:56 BRT">
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="iniciaTeste" is-config="true" duration-ms="13372" started-at="2020-02-03T16:09:01 BRT" finished-at="2020-02-03T16:09:14 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniciaTeste -->
-        <test-method status="PASS" signature="testeDeCadastroFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="testeDeCadastroFalha" duration-ms="36739" started-at="2020-02-03T15:44:56 BRT" finished-at="2020-02-03T15:45:33 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testeDeCadastroFalha -->
-        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="finalizaTeste" is-config="true" duration-ms="1965" started-at="2020-02-03T15:45:33 BRT" finished-at="2020-02-03T15:45:35 BRT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testeDeCadastroFalha status=SUCCESS method=Cadastro.testeDeCadastroFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalizaTeste -->
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="iniciaTeste" is-config="true" duration-ms="12710" started-at="2020-02-03T15:45:35 BRT" finished-at="2020-02-03T15:45:48 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- iniciaTeste -->
-        <test-method status="PASS" signature="testeDeCadastroSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="testeDeCadastroSucesso" duration-ms="36438" started-at="2020-02-03T15:45:48 BRT" finished-at="2020-02-03T15:46:24 BRT">
+        <test-method status="PASS" signature="testeDeCadastroSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="testeDeCadastroSucesso" duration-ms="39559" started-at="2020-02-03T16:09:14 BRT" finished-at="2020-02-03T16:09:54 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeDeCadastroSucesso -->
-        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="finalizaTeste" is-config="true" duration-ms="1802" started-at="2020-02-03T15:46:24 BRT" finished-at="2020-02-03T15:46:26 BRT">
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@15d0c81b]" name="finalizaTeste" is-config="true" duration-ms="2797" started-at="2020-02-03T16:09:54 BRT" finished-at="2020-02-03T16:09:57 BRT">
           <params>
             <param index="0">
               <value>
