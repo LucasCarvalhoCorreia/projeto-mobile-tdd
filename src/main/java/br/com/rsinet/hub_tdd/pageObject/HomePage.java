@@ -95,13 +95,14 @@ public class HomePage {
 		encontraBtLogin().click();
 	}
 	
-	private MobileElement encontraNoBt() {
-		MobileElement encontraNoBt = (MobileElement) driver.findElement(By.id("android:id/button2"));
+	private MobileElement encontraNoBt(WebDriver driver) {
+		WebDriverWait wait = new WebDriverWait(driver, 50);
+		MobileElement encontraNoBt = (MobileElement) wait.until(ExpectedConditions.elementToBeClickable(By.id("android:id/button2")));
 		return encontraNoBt;
 	}
 	
 	public void clicaNoBt() {
-		encontraNoBt().click();
+		encontraNoBt(driver).click();
 	}
 	
 	
