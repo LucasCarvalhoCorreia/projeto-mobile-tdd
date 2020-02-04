@@ -24,10 +24,10 @@ public class ExtendReport {
 	}
 
 	public static void setExtent() {
-		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/target/Reports"+pegaHora()+".html");
+		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/target/Reports "+pegaHora()+".html");
 
 		htmlReporter.config().setDocumentTitle("Automatização de Teste");// Titulo do documento
-		htmlReporter.config().setReportName("Reporte Funcional");// Nome do reporte
+		htmlReporter.config().setReportName("Reporte TDD");// Nome do reporte
 		htmlReporter.config().setTheme(Theme.DARK);
 
 		extent = new ExtentReports();
@@ -36,7 +36,7 @@ public class ExtendReport {
 
 		extent.setSystemInfo("Hostname", "LocalHost");
 		extent.setSystemInfo("OS", "Windows10");
-		extent.setSystemInfo("Tester Name", "Abdiel");
+		extent.setSystemInfo("Tester Name", "Lucas");
 		extent.setSystemInfo("Browser", "Chrome");
 	}
 

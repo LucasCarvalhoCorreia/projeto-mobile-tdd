@@ -22,17 +22,14 @@ public class Prints {
 	 * do metodo.
 	 */
 	public static String tirarPrints(WebDriver driver, String nomeDaImagem) throws Exception {
-		TakesScreenshot scrShot = ((TakesScreenshot) driver);
-		File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
-		/* Especifica o endereço onde a print sera armazenada. */
-		String imageFileDir = "target";
-		FileUtils.copyFile(srcFile, new File(imageFileDir, nomeDaImagem + timestamp() + ".png"));
+		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        String destino = System.getProperty("user.dir") + "target" + nomeDaImagem + timestamp() + ".png";
 
-		try {
-			FileUtils.copyFile(srcFile, new File(imageFileDir));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return imageFileDir;
+        try {
+            FileUtils.copyFile(file, new File(destino));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return destino;
 	}
 }

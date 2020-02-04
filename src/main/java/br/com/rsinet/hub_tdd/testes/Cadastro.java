@@ -1,7 +1,5 @@
 package br.com.rsinet.hub_tdd.testes;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -52,7 +50,7 @@ public class Cadastro {
 	@Test
 	public void testeDeCadastroSucesso() throws Exception {
 		test = ExtendReport.createTest("CadastroSucesso");
-
+		
 		homePage.clicaMenu();
 		
 		homePage.clicaLogin();
@@ -112,7 +110,6 @@ public class Cadastro {
 
 		cadastroPage.clicaRegister();
 		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		homePage.clicaMenu();
 		
 		String mensagem = pegaMassa.MenssagemAssertCadastroSucesso();
@@ -133,7 +130,7 @@ public class Cadastro {
 //		homePage.clicaLogin();
 //		
 //		homePage.clicaCriarNovaConta();
-//
+//		
 //		cadastroPage.preencheUserName(pegaMassa.UserName());
 //		
 //		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
@@ -143,49 +140,18 @@ public class Cadastro {
 //		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
 //		
 //		cadastroPage.preenchePassword(pegaMassa.Password());
-//		
+//	
 //		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
 //		
 //		cadastroPage.preencheConfirmPassword(pegaMassa.ConfirmPasswordErrado());
-//
+//	
 //		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
 //		
-//		cadastroPage.preencheFirstName(pegaMassa.FirstName());
+//		String condicao = pegaMassa.CondicaoAssertCadastroErro();
+//		String mensagem = pegaMassa.MenssagemAssertCadastroErro();
+//		String pass = cadastroPage.encontraMsgPassword().getText();
 //		
-//		cadastroPage.preencheLastName(pegaMassa.LastName());
-//		
-//		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-//		
-//		cadastroPage.preenchePhoneNumber(pegaMassa.Telefone());
-//		
-//		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-//		
-//		cadastroPage.clicaCountry();	
-//		
-//		new TouchAction(driver).press(PointOption.point(1019, 1962)).moveTo(PointOption.point(1014, 132)).perform();
-//		new TouchAction(driver).press(PointOption.point(1019, 1962)).moveTo(PointOption.point(1014, 132)).perform();
-//		
-//		cadastroPage.clicaBrazil();
-//		
-//		cadastroPage.preencheState(pegaMassa.Estado());
-//		
-//		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-//		
-//		cadastroPage.preencheAddress(pegaMassa.Endereco());
-//		
-//		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-//		
-//		cadastroPage.preencheCity(pegaMassa.Cidade());
-//
-//		cadastroPage.preenchePostalCode(pegaMassa.Cep());
-//		
-//		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-//		
-//		new TouchAction(driver).press(PointOption.point(1019, 1962)).moveTo(PointOption.point(1014, 132)).perform();
-//		
-//		cadastroPage.clicaCheckOffers();	
-//
-//		cadastroPage.clicaRegister();
+//		Assert.assertTrue(pass.equals(condicao), mensagem);
 //	}
 	
 	@AfterMethod

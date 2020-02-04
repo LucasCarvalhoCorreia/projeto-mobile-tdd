@@ -156,6 +156,11 @@ public class CadastroPage {
 		return btRegister;
 	}
 	
+	public MobileElement encontraMsgPassword() {
+		MobileElement tvPassword = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[4]/android.widget.RelativeLayout/android.widget.TextView"));
+		return tvPassword;
+	}
+
 	public void clicaRegister() {
 		encontraRegister().click();	
 	}
