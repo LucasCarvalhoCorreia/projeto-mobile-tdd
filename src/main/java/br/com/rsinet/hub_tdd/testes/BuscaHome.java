@@ -37,8 +37,6 @@ public class BuscaHome {
 	public void iniciaTeste() throws Exception {
 		driver = DriverFactory.iniciaApp();
 		
-		ExcelUtils.setExcelFile(Constantes.Path_TestData + Constantes.File_TestData, "PesquisaCat");
-		
 		homePage = PageFactory.initElements(driver, HomePage.class);
 		pesquisaPage = PageFactory.initElements(driver, PesquisaPage.class);
 		pegaMassa = new PegaMassa();
@@ -48,9 +46,24 @@ public class BuscaHome {
 	public void testeDeBuscaPorTelaInicialSucesso() throws Exception {
 		test = ExtendReport.createTest("PesquisaHomeSucesso");
 		
+		ExcelUtils.setExcelFile(Constantes.Path_TestData + Constantes.File_TestData, "Cadastro");
+		
+		homePage.clicaMenu();
+		
+		homePage.clicaLogin();
+		
+		homePage.preencheUserLogin(pegaMassa.UserName());
+		homePage.preenchePasswordLogin(pegaMassa.Password());
+		
+		homePage.clicaBtLogin();
+		
+		homePage.clicaNoBt();
+		
 		homePage.clicaCategoriaSpeakers();
 		
 		pesquisaPage.escolheProduto();
+		
+		ExcelUtils.setExcelFile(Constantes.Path_TestData + Constantes.File_TestData, "PesquisaCat");
 		
 		String condicao = pegaMassa.CondicaoAssertMassaSucesso();
 		String mensagem = pegaMassa.MenssagemAssertMassaSucesso();

@@ -66,4 +66,43 @@ public class HomePage {
 		encontraSpeakers().click();
 	}
 	
+	private MobileElement encontraUserLogin() {
+		MobileElement encontraUserLogin = (MobileElement) driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[3]/android.widget.EditText"));
+		return encontraUserLogin;
+	}
+	
+	public void preencheUserLogin(String et_UserLogin) {
+		encontraUserLogin().click();
+		encontraUserLogin().sendKeys(et_UserLogin);
+	}
+	
+	private MobileElement encontraPasswordLogin() {
+		MobileElement encontraUserLogin = (MobileElement) driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[4]/android.widget.EditText"));
+		return encontraUserLogin;
+	}
+	
+	public void preenchePasswordLogin(String et_PasswordLogin) {
+		encontraPasswordLogin().click();
+		encontraPasswordLogin().sendKeys(et_PasswordLogin);
+	}
+	
+	private MobileElement encontraBtLogin() {
+		MobileElement encontraBtLogin = (MobileElement) driver.findElement(By.id("com.Advantage.aShopping:id/buttonLogin"));
+		return encontraBtLogin;
+	}
+	
+	public void clicaBtLogin() {
+		encontraBtLogin().click();
+	}
+	
+	private MobileElement encontraNoBt() {
+		MobileElement encontraNoBt = (MobileElement) driver.findElement(By.id("android:id/button2"));
+		return encontraNoBt;
+	}
+	
+	public void clicaNoBt() {
+		encontraNoBt().click();
+	}
+	
+	
 }
