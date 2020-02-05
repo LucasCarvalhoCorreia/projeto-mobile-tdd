@@ -96,8 +96,8 @@ public class HomePage {
 	}
 	
 	private MobileElement encontraNoBt(WebDriver driver) {
-		WebDriverWait wait = new WebDriverWait(driver, 50);
-		MobileElement encontraNoBt = (MobileElement) wait.until(ExpectedConditions.elementToBeClickable(By.id("android:id/button2")));
+		WebDriverWait wait = new WebDriverWait(driver, 60);
+		MobileElement encontraNoBt = (MobileElement) wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.Button[1]")));
 		return encontraNoBt;
 	}
 	

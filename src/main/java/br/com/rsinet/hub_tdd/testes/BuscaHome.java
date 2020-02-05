@@ -5,6 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -29,7 +30,7 @@ public class BuscaHome {
 	private PesquisaPage pesquisaPage;
 	
 	@BeforeTest
-	public void extendReport() {
+	public void iniciaExtendReport() {
 		ExtendReport.setExtent();
 	}
 
@@ -72,16 +73,56 @@ public class BuscaHome {
 		Assert.assertTrue(pass.equals(condicao), mensagem);
 	}
 	
-//	@Test
-//	public void testeDeBuscaPorTelaInicialFalha() {
-//		
-//	}
+	@Test
+	public void testeDeBuscaPorTelaInicialFalha() throws Exception {
+		test = ExtendReport.createTest("PesquisaHomeFalha");
+		
+		ExcelUtils.setExcelFile(Constantes.Path_TestData + Constantes.File_TestData, "Cadastro");
+		
+		homePage.clicaMenu();
+		
+		homePage.clicaLogin();
+		
+		homePage.preencheUserLogin(pegaMassa.UserName());
+		homePage.preenchePasswordLogin(pegaMassa.Password());
+		
+		homePage.clicaBtLogin();
+		
+		homePage.clicaNoBt();
+		
+		homePage.clicaCategoriaSpeakers();
+		
+		pesquisaPage.escolheProduto();
+		
+		pesquisaPage.clicaQuantidadeProduto();
+		
+		pesquisaPage.preencheQuantidadeCompra();
+		
+		pesquisaPage.clicaAplicaQuantidade();
+		
+		pesquisaPage.clicaAdicionarAoCarrinho();
+		
+		pesquisaPage.clicaCarrinhoDeCompras();
+		
+		ExcelUtils.setExcelFile(Constantes.Path_TestData + Constantes.File_TestData, "PesquisaCat");
+		
+		String condicao = pegaMassa.CondicaoAssertMassaErro();
+		String mensagem = pegaMassa.MenssagemAssertMassaErro();
+		
+		String pass = pesquisaPage.encontraQuantidadeComprada().getText();
+		Assert.assertTrue(pass.equals(condicao), mensagem);
+		
+	}
 	
 	@AfterMethod
 	public void finalizaTeste(ITestResult result) throws Exception {
 		ExtendReport.tearDown(result, test, driver);
-		ExtendReport.endReport();
 		DriverFactory.fechaApp();
+	}
+	
+	@AfterTest
+	public void finalizaExtendReport() {
+		ExtendReport.endReport();
 	}
 
 }

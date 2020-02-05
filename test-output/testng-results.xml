@@ -1,105 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25936" started-at="2020-02-04T16:00:12 BRT" finished-at="2020-02-04T16:00:38 BRT">
+  <suite name="Teste de automação em TDD com TestNG" duration-ms="194617" started-at="2020-02-05T11:58:38 BRT" finished-at="2020-02-05T12:01:53 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25936" started-at="2020-02-04T16:00:12 BRT" finished-at="2020-02-04T16:00:38 BRT">
-      <class name="br.com.rsinet.hub_tdd.testes.BuscaHome">
-        <test-method status="PASS" signature="extendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@167fdd33]" name="extendReport" is-config="true" duration-ms="98" started-at="2020-02-04T16:00:12 BRT" finished-at="2020-02-04T16:00:12 BRT">
+    <test name="Suite de testes para projeto de automação em TDD" duration-ms="194617" started-at="2020-02-05T11:58:38 BRT" finished-at="2020-02-05T12:01:53 BRT">
+      <class name="br.com.rsinet.hub_tdd.testes.Cadastro">
+        <test-method status="PASS" signature="extendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@17579e0f]" name="extendReport" is-config="true" duration-ms="1" started-at="2020-02-05T11:58:38 BRT" finished-at="2020-02-05T11:58:38 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extendReport -->
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@167fdd33]" name="iniciaTeste" is-config="true" duration-ms="14541" started-at="2020-02-04T16:00:12 BRT" finished-at="2020-02-04T16:00:27 BRT">
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@17579e0f]" name="iniciaTeste" is-config="true" duration-ms="14904" started-at="2020-02-05T11:58:38 BRT" finished-at="2020-02-05T11:58:53 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniciaTeste -->
-        <test-method status="FAIL" signature="testeDeBuscaPorTelaInicialSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@167fdd33]" name="testeDeBuscaPorTelaInicialSucesso" duration-ms="9194" started-at="2020-02-04T16:00:27 BRT" finished-at="2020-02-04T16:00:36 BRT">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[The element 'By.id: android:id/button2' does not exist in DOM anymore
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RSI1507', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: .SplashActivity, appPackage: com.Advantage.aShopping, databaseEnabled: false, desired: {appActivity: .SplashActivity, appPackage: com.Advantage.aShopping, deviceName: ASUS_X018D, platformName: android}, deviceApiLevel: 27, deviceManufacturer: asus, deviceModel: ASUS_X018D, deviceName: JCAXB602K0379AL, deviceScreenDensity: 480, deviceScreenSize: 1080x2160, deviceUDID: JCAXB602K0379AL, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 1956, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 9d00ae82-7d19-4f58-9209-c4fdb5fe3e7c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element 'By.id: android:id/button2' does not exist in DOM anymore
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RSI1507', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: .SplashActivity, appPackage: com.Advantage.aShopping, databaseEnabled: false, desired: {appActivity: .SplashActivity, appPackage: com.Advantage.aShopping, deviceName: ASUS_X018D, platformName: android}, deviceApiLevel: 27, deviceManufacturer: asus, deviceModel: ASUS_X018D, deviceName: JCAXB602K0379AL, deviceScreenDensity: 480, deviceScreenSize: 1080x2160, deviceUDID: JCAXB602K0379AL, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 1956, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 9d00ae82-7d19-4f58-9209-c4fdb5fe3e7c
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at br.com.rsinet.hub_tdd.pageObject.HomePage.clicaNoBt(HomePage.java:104)
-at br.com.rsinet.hub_tdd.testes.BuscaHome.testeDeBuscaPorTelaInicialSucesso(BuscaHome.java:60)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method status="PASS" signature="testeDeCadastroFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@17579e0f]" name="testeDeCadastroFalha" duration-ms="15321" started-at="2020-02-05T11:58:53 BRT" finished-at="2020-02-05T11:59:08 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testeDeBuscaPorTelaInicialSucesso -->
-        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@167fdd33]" name="finalizaTeste" is-config="true" duration-ms="2075" started-at="2020-02-04T16:00:36 BRT" finished-at="2020-02-04T16:00:38 BRT">
+        </test-method> <!-- testeDeCadastroFalha -->
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@17579e0f]" name="finalizaTeste" is-config="true" duration-ms="1882" started-at="2020-02-05T11:59:08 BRT" finished-at="2020-02-05T11:59:10 BRT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testeDeBuscaPorTelaInicialSucesso status=FAILURE method=BuscaHome.testeDeBuscaPorTelaInicialSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@167fdd33] output={null}]]]>
+                <![CDATA[[TestResult name=testeDeCadastroFalha status=SUCCESS method=Cadastro.testeDeCadastroFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@17579e0f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaTeste -->
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@17579e0f]" name="iniciaTeste" is-config="true" duration-ms="11849" started-at="2020-02-05T11:59:10 BRT" finished-at="2020-02-05T11:59:22 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniciaTeste -->
+        <test-method status="PASS" signature="testeDeCadastroSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@17579e0f]" name="testeDeCadastroSucesso" duration-ms="40049" started-at="2020-02-05T11:59:22 BRT" finished-at="2020-02-05T12:00:02 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testeDeCadastroSucesso -->
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@17579e0f]" name="finalizaTeste" is-config="true" duration-ms="2450" started-at="2020-02-05T12:00:02 BRT" finished-at="2020-02-05T12:00:05 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testeDeCadastroSucesso status=SUCCESS method=Cadastro.testeDeCadastroSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@17579e0f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalizaTeste -->
+        <test-method status="PASS" signature="finalizaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@17579e0f]" name="finalizaExtendReport" is-config="true" duration-ms="76" started-at="2020-02-05T12:01:53 BRT" finished-at="2020-02-05T12:01:53 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalizaExtendReport -->
+      </class> <!-- br.com.rsinet.hub_tdd.testes.Cadastro -->
+      <class name="br.com.rsinet.hub_tdd.testes.BuscaHome">
+        <test-method status="PASS" signature="iniciaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@3712b94]" name="iniciaExtendReport" is-config="true" duration-ms="91" started-at="2020-02-05T11:58:38 BRT" finished-at="2020-02-05T11:58:38 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniciaExtendReport -->
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@3712b94]" name="iniciaTeste" is-config="true" duration-ms="11431" started-at="2020-02-05T12:00:46 BRT" finished-at="2020-02-05T12:00:57 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniciaTeste -->
+        <test-method status="PASS" signature="testeDeBuscaPorTelaInicialFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@3712b94]" name="testeDeBuscaPorTelaInicialFalha" duration-ms="21922" started-at="2020-02-05T12:00:57 BRT" finished-at="2020-02-05T12:01:19 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testeDeBuscaPorTelaInicialFalha -->
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@3712b94]" name="finalizaTeste" is-config="true" duration-ms="2029" started-at="2020-02-05T12:01:19 BRT" finished-at="2020-02-05T12:01:21 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testeDeBuscaPorTelaInicialFalha status=SUCCESS method=BuscaHome.testeDeBuscaPorTelaInicialFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@3712b94] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalizaTeste -->
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@3712b94]" name="iniciaTeste" is-config="true" duration-ms="13241" started-at="2020-02-05T12:01:21 BRT" finished-at="2020-02-05T12:01:35 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniciaTeste -->
+        <test-method status="PASS" signature="testeDeBuscaPorTelaInicialSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@3712b94]" name="testeDeBuscaPorTelaInicialSucesso" duration-ms="15254" started-at="2020-02-05T12:01:35 BRT" finished-at="2020-02-05T12:01:50 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testeDeBuscaPorTelaInicialSucesso -->
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@3712b94]" name="finalizaTeste" is-config="true" duration-ms="2440" started-at="2020-02-05T12:01:50 BRT" finished-at="2020-02-05T12:01:52 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testeDeBuscaPorTelaInicialSucesso status=SUCCESS method=BuscaHome.testeDeBuscaPorTelaInicialSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@3712b94] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalizaTeste -->
+        <test-method status="PASS" signature="finalizaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@3712b94]" name="finalizaExtendReport" is-config="true" duration-ms="243" started-at="2020-02-05T12:01:52 BRT" finished-at="2020-02-05T12:01:53 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalizaExtendReport -->
       </class> <!-- br.com.rsinet.hub_tdd.testes.BuscaHome -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="br.com.rsinet.hub_tdd.testes.BuscaLupa">
+        <test-method status="PASS" signature="extendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@4d41cee]" name="extendReport" is-config="true" duration-ms="1" started-at="2020-02-05T11:58:38 BRT" finished-at="2020-02-05T11:58:38 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extendReport -->
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@4d41cee]" name="iniciaTeste" is-config="true" duration-ms="11709" started-at="2020-02-05T12:00:05 BRT" finished-at="2020-02-05T12:00:16 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniciaTeste -->
+        <test-method status="PASS" signature="testeDeBuscaPorLupaFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@4d41cee]" name="testeDeBuscaPorLupaFalha" duration-ms="5095" started-at="2020-02-05T12:00:16 BRT" finished-at="2020-02-05T12:00:22 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testeDeBuscaPorLupaFalha -->
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@4d41cee]" name="finalizaTeste" is-config="true" duration-ms="1753" started-at="2020-02-05T12:00:22 BRT" finished-at="2020-02-05T12:00:23 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testeDeBuscaPorLupaFalha status=SUCCESS method=BuscaLupa.testeDeBuscaPorLupaFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@4d41cee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalizaTeste -->
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@4d41cee]" name="iniciaTeste" is-config="true" duration-ms="12438" started-at="2020-02-05T12:00:23 BRT" finished-at="2020-02-05T12:00:36 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniciaTeste -->
+        <test-method status="PASS" signature="testeDeBuscaPorLupaSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@4d41cee]" name="testeDeBuscaPorLupaSucesso" duration-ms="8386" started-at="2020-02-05T12:00:36 BRT" finished-at="2020-02-05T12:00:44 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testeDeBuscaPorLupaSucesso -->
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@4d41cee]" name="finalizaTeste" is-config="true" duration-ms="1942" started-at="2020-02-05T12:00:44 BRT" finished-at="2020-02-05T12:00:46 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testeDeBuscaPorLupaSucesso status=SUCCESS method=BuscaLupa.testeDeBuscaPorLupaSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@4d41cee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalizaTeste -->
+        <test-method status="PASS" signature="finalizaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@4d41cee]" name="finalizaExtendReport" is-config="true" duration-ms="75" started-at="2020-02-05T12:01:53 BRT" finished-at="2020-02-05T12:01:53 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalizaExtendReport -->
+      </class> <!-- br.com.rsinet.hub_tdd.testes.BuscaLupa -->
+    </test> <!-- Suite de testes para projeto de automação em TDD -->
+  </suite> <!-- Teste de automação em TDD com TestNG -->
 </testng-results>

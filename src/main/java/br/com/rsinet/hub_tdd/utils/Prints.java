@@ -14,7 +14,7 @@ public class Prints {
 
 	/* Atribui data e hora ao nomear o arquivo de print. */
 	public static String timestamp() {
-		return new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
+		return new SimpleDateFormat(" yyyy-MM-dd HH-mm-ss").format(new Date());
 	}
 
 	/*
@@ -23,7 +23,7 @@ public class Prints {
 	 */
 	public static String tirarPrints(WebDriver driver, String nomeDaImagem) throws Exception {
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String destino = System.getProperty("user.dir") + "target" + nomeDaImagem + timestamp() + ".png";
+        String destino = System.getProperty("user.dir") + "/target/" + nomeDaImagem + timestamp() + ".png";
 
         try {
             FileUtils.copyFile(file, new File(destino));

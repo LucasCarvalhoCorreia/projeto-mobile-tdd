@@ -47,4 +47,56 @@ public class PesquisaPage {
 		encontraProdutoCategoria(driver).click();
 	}
 	
+	private MobileElement encontraQuantidadeProduto() {
+		MobileElement encontraQuantidadeProduto = (MobileElement) driver.findElement(By.id("com.Advantage.aShopping:id/textViewProductQuantity"));
+		return encontraQuantidadeProduto;
+	}
+	
+	public void clicaQuantidadeProduto() {
+		encontraQuantidadeProduto().click();
+	}
+	
+	private MobileElement encontraQuantidaDeCompra() {
+		MobileElement encontraQuantidaDeCompra = (MobileElement) driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.EditText"));
+		return encontraQuantidaDeCompra;
+	}
+	
+	public void preencheQuantidadeCompra() {
+		encontraQuantidaDeCompra().click();
+		encontraQuantidaDeCompra().clear();
+		encontraQuantidaDeCompra().sendKeys("11");
+	}
+	
+	private MobileElement encontraAplicaQuantidade() {
+		MobileElement encontraAplicaQuantidade = (MobileElement) driver.findElement(By.id("com.Advantage.aShopping:id/textViewApply"));
+		return encontraAplicaQuantidade;
+	}
+	
+	public void clicaAplicaQuantidade() {
+		encontraAplicaQuantidade().click();
+	}
+	
+	private MobileElement encontraAdicionarAoCarrinho() {
+		MobileElement encontraAdicionarAoCarrinho = (MobileElement) driver.findElement(By.id("com.Advantage.aShopping:id/buttonProductAddToCart"));
+		return encontraAdicionarAoCarrinho;
+	}
+	
+	public void clicaAdicionarAoCarrinho() {
+		encontraAdicionarAoCarrinho().click();
+	}
+	
+	private MobileElement encontraCarrinhoDeCompras() {
+		MobileElement encontraCarrinhoDeCompras = (MobileElement) driver.findElement(By.id("com.Advantage.aShopping:id/imageViewCart"));
+		return encontraCarrinhoDeCompras;
+	}
+	
+	public void clicaCarrinhoDeCompras() {
+		encontraCarrinhoDeCompras().click();
+	}
+	
+	public MobileElement encontraQuantidadeComprada() {
+		MobileElement encontraQuantidadeDeCompra = (MobileElement) driver.findElement(By.id("com.Advantage.aShopping:id/textViewCartQuantity"));
+		return encontraQuantidadeDeCompra;
+	}
+	
 }

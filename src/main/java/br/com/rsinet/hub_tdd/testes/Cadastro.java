@@ -5,6 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -120,45 +121,49 @@ public class Cadastro {
 		Assert.assertTrue(pass.equals(condicao), mensagem);
 	}
 	
-//	@SuppressWarnings("rawtypes")
-//	@Test
-//	public void testeDeCadastroFalha() throws Exception {
-//		test = ExtendReport.createTest("CadastroFalha");
-//
-//		homePage.clicaMenu();
-//		
-//		homePage.clicaLogin();
-//		
-//		homePage.clicaCriarNovaConta();
-//		
-//		cadastroPage.preencheUserName(pegaMassa.UserName());
-//		
-//		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-//
-//		cadastroPage.preencheEmail(pegaMassa.Email());
-//		
-//		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-//		
-//		cadastroPage.preenchePassword(pegaMassa.Password());
-//	
-//		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-//		
-//		cadastroPage.preencheConfirmPassword(pegaMassa.ConfirmPasswordErrado());
-//	
-//		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-//		
-//		String condicao = pegaMassa.CondicaoAssertCadastroErro();
-//		String mensagem = pegaMassa.MenssagemAssertCadastroErro();
-//		String pass = cadastroPage.encontraMsgPassword().getText();
-//		
-//		Assert.assertTrue(pass.equals(condicao), mensagem);
-//	}
+	@SuppressWarnings("rawtypes")
+	@Test
+	public void testeDeCadastroFalha() throws Exception {
+		test = ExtendReport.createTest("CadastroFalha");
+
+		homePage.clicaMenu();
+		
+		homePage.clicaLogin();
+		
+		homePage.clicaCriarNovaConta();
+		
+		cadastroPage.preencheUserName(pegaMassa.UserName());
+		
+		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
+
+		cadastroPage.preencheEmail(pegaMassa.Email());
+		
+		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
+		
+		cadastroPage.preenchePassword(pegaMassa.Password());
+	
+		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
+		
+		cadastroPage.preencheConfirmPassword(pegaMassa.ConfirmPasswordErrado());
+	
+		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
+		
+		String condicao = pegaMassa.CondicaoAssertCadastroErro();
+		String mensagem = pegaMassa.MenssagemAssertCadastroErro();
+		String pass = cadastroPage.encontraMsgPassword().getText();
+		
+		Assert.assertTrue(pass.equals(condicao), mensagem);
+	}
 	
 	@AfterMethod
 	public void finalizaTeste(ITestResult result) throws Exception {
 		ExtendReport.tearDown(result, test, driver);
-		ExtendReport.endReport();
 		DriverFactory.fechaApp();
+	}
+	
+	@AfterTest
+	public void finalizaExtendReport() {
+		ExtendReport.endReport();
 	}
 
 }

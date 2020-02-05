@@ -5,6 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -78,8 +79,12 @@ public class BuscaLupa {
 	@AfterMethod
 	public void finalizaTeste(ITestResult result) throws Exception {
 		ExtendReport.tearDown(result, test, driver);
-		ExtendReport.endReport();
 		DriverFactory.fechaApp();
+	}
+	
+	@AfterTest
+	public void finalizaExtendReport() {
+		ExtendReport.endReport();
 	}
 
 }
