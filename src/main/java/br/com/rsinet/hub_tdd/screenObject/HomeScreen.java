@@ -1,17 +1,19 @@
-package br.com.rsinet.hub_tdd.pageObject;
+package br.com.rsinet.hub_tdd.screenObject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.MobileElement;
 
-public class HomePage {
+public class HomeScreen {
 	
 	private WebDriver driver;
 	
-	public HomePage(WebDriver driver) {
+	public HomeScreen(WebDriver driver) {
+		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
 	

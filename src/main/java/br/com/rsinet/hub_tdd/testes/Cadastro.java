@@ -1,6 +1,6 @@
 package br.com.rsinet.hub_tdd.testes;
 
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -12,22 +12,21 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
 
-import br.com.rsinet.hub_tdd.pageObject.CadastroPage;
-import br.com.rsinet.hub_tdd.pageObject.HomePage;
+import br.com.rsinet.hub_tdd.screenObject.CadastroScreen;
+import br.com.rsinet.hub_tdd.screenObject.HomeScreen;
 import br.com.rsinet.hub_tdd.utils.Constantes;
 import br.com.rsinet.hub_tdd.utils.DriverFactory;
 import br.com.rsinet.hub_tdd.utils.ExcelUtils;
 import br.com.rsinet.hub_tdd.utils.ExtendReport;
 import br.com.rsinet.hub_tdd.utils.PegaMassa;
-import io.appium.java_client.TouchAction;
+import br.com.rsinet.hub_tdd.utils.ScreenObjectManager;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.touch.offset.PointOption;
 
 public class Cadastro {
 
-	private AndroidDriver<WebElement> driver;
-	private CadastroPage cadastroPage;
-	private HomePage homePage;
+	private WebDriver driver;
+	private CadastroScreen cadastroScreen;
+	private HomeScreen homeScreen;
 	private ExtentTest test;
 	private PegaMassa pegaMassa;
 	
@@ -41,10 +40,11 @@ public class Cadastro {
 		driver = DriverFactory.iniciaApp();
 		
 		ExcelUtils.setExcelFile(Constantes.Path_TestData + Constantes.File_TestData, "Cadastro");
-		
-		cadastroPage = PageFactory.initElements(driver, CadastroPage.class);
-		homePage = PageFactory.initElements(driver, HomePage.class);
-		pegaMassa = new PegaMassa();
+		PageFactory.initElements(driver, this);
+		ScreenObjectManager manager = new ScreenObjectManager(driver);
+		cadastroScreen = manager.getCadastroScreen();
+		homeScreen = manager.getHomeScreen();
+		pegaMassa = manager.getPegaMassa();
 	}
 
 	@SuppressWarnings("rawtypes")
@@ -52,105 +52,79 @@ public class Cadastro {
 	public void testeDeCadastroSucesso() throws Exception {
 		test = ExtendReport.createTest("CadastroSucesso");
 		
-		homePage.clicaMenu();
+		homeScreen.clicaMenu();
 		
-		homePage.clicaLogin();
+		homeScreen.clicaLogin();
 		
-		homePage.clicaCriarNovaConta();
+		homeScreen.clicaCriarNovaConta();
 
-		cadastroPage.preencheUserName(pegaMassa.UserName());
+		cadastroScreen.preencheUserName(pegaMassa.UserName());
 		
-		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
+		cadastroScreen.preencheEmail(pegaMassa.Email());
+		
+		cadastroScreen.preenchePassword(pegaMassa.Password());
+		
+		cadastroScreen.preencheConfirmPassword(pegaMassa.ConfirmPassword());
 
-		cadastroPage.preencheEmail(pegaMassa.Email());
+		cadastroScreen.preencheFirstName(pegaMassa.FirstName());
 		
-		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
+		cadastroScreen.preencheLastName(pegaMassa.LastName());
 		
-		cadastroPage.preenchePassword(pegaMassa.Password());
+		cadastroScreen.preenchePhoneNumber(pegaMassa.Telefone());
 		
-		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
+		cadastroScreen.scroll(0.8, 0.2);
 		
-		cadastroPage.preencheConfirmPassword(pegaMassa.ConfirmPassword());
+		cadastroScreen.clicaCountry();	
+		
+		cadastroScreen.scrollCountry((AndroidDriver) driver, "Brazil");
+		
+		cadastroScreen.clicaBrazil((AndroidDriver) driver, "Brazil");
+		
+		cadastroScreen.preencheState(pegaMassa.Estado());
+		
+		cadastroScreen.preencheAddress(pegaMassa.Endereco());
+		
+		cadastroScreen.preencheCity(pegaMassa.Cidade());
 
-		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
+		cadastroScreen.preenchePostalCode(pegaMassa.Cep());
 		
-		cadastroPage.preencheFirstName(pegaMassa.FirstName());
-		
-		cadastroPage.preencheLastName(pegaMassa.LastName());
-		
-		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-		
-		cadastroPage.preenchePhoneNumber(pegaMassa.Telefone());
-		
-		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-		
-		cadastroPage.clicaCountry();	
-		
-		new TouchAction(driver).press(PointOption.point(1019, 1962)).moveTo(PointOption.point(1014, 132)).perform();
-		new TouchAction(driver).press(PointOption.point(1019, 1962)).moveTo(PointOption.point(1014, 132)).perform();
-		
-		cadastroPage.clicaBrazil();
-		
-		cadastroPage.preencheState(pegaMassa.Estado());
-		
-		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-		
-		cadastroPage.preencheAddress(pegaMassa.Endereco());
-		
-		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-		
-		cadastroPage.preencheCity(pegaMassa.Cidade());
+		cadastroScreen.clicaCheckOffers();	
 
-		cadastroPage.preenchePostalCode(pegaMassa.Cep());
+		cadastroScreen.clicaRegister();
 		
-		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-		
-		new TouchAction(driver).press(PointOption.point(1019, 1962)).moveTo(PointOption.point(1014, 132)).perform();
-		
-		cadastroPage.clicaCheckOffers();	
-
-		cadastroPage.clicaRegister();
-		
-		homePage.clicaMenu();
+		homeScreen.clicaMenu();
 		
 		String mensagem = pegaMassa.MenssagemAssertCadastroSucesso();
 		String condicao = pegaMassa.UserName();
 		
-		String pass = homePage.pegaLogon().getText();
+		String pass = homeScreen.pegaLogon().getText();
 		
 		Assert.assertTrue(pass.equals(condicao), mensagem);
 	}
 	
-	@SuppressWarnings("rawtypes")
 	@Test
 	public void testeDeCadastroFalha() throws Exception {
 		test = ExtendReport.createTest("CadastroFalha");
 
-		homePage.clicaMenu();
+		homeScreen.clicaMenu();
 		
-		homePage.clicaLogin();
+		homeScreen.clicaLogin();
 		
-		homePage.clicaCriarNovaConta();
-		
-		cadastroPage.preencheUserName(pegaMassa.UserName());
-		
-		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
+		homeScreen.clicaCriarNovaConta();
 
-		cadastroPage.preencheEmail(pegaMassa.Email());
+		cadastroScreen.preencheUserName(pegaMassa.UserName());
 		
-		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
+		cadastroScreen.preencheEmail(pegaMassa.Email());
 		
-		cadastroPage.preenchePassword(pegaMassa.Password());
+		cadastroScreen.preenchePassword(pegaMassa.Password());
+		
+		cadastroScreen.preencheConfirmPassword(pegaMassa.ConfirmPasswordErrado());
+		
+		cadastroScreen.preencheFirstName(pegaMassa.FirstName());
 	
-		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-		
-		cadastroPage.preencheConfirmPassword(pegaMassa.ConfirmPasswordErrado());
-	
-		new TouchAction(driver).tap(PointOption.point(976, 1934)).perform();
-		
 		String condicao = pegaMassa.CondicaoAssertCadastroErro();
 		String mensagem = pegaMassa.MenssagemAssertCadastroErro();
-		String pass = cadastroPage.encontraMsgPassword().getText();
+		String pass = cadastroScreen.encontraMsgPassword().getText();
 		
 		Assert.assertTrue(pass.equals(condicao), mensagem);
 	}

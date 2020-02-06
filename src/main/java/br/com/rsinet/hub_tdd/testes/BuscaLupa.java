@@ -1,6 +1,6 @@
 package br.com.rsinet.hub_tdd.testes;
 
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -12,22 +12,22 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
 
-import br.com.rsinet.hub_tdd.pageObject.HomePage;
-import br.com.rsinet.hub_tdd.pageObject.PesquisaPage;
+import br.com.rsinet.hub_tdd.screenObject.HomeScreen;
+import br.com.rsinet.hub_tdd.screenObject.PesquisaScreen;
 import br.com.rsinet.hub_tdd.utils.Constantes;
 import br.com.rsinet.hub_tdd.utils.DriverFactory;
 import br.com.rsinet.hub_tdd.utils.ExcelUtils;
 import br.com.rsinet.hub_tdd.utils.ExtendReport;
 import br.com.rsinet.hub_tdd.utils.PegaMassa;
-import io.appium.java_client.android.AndroidDriver;
+import br.com.rsinet.hub_tdd.utils.ScreenObjectManager;
 
 public class BuscaLupa {
 	
 	private ExtentTest test;
-	private AndroidDriver<WebElement> driver;
-	private HomePage homePage;
+	private WebDriver driver;
+	private HomeScreen homeScreen;
 	private PegaMassa pegaMassa;
-	private PesquisaPage pesquisaPage;
+	private PesquisaScreen pesquisaScreen;
 	
 	@BeforeTest
 	public void extendReport() {
@@ -39,26 +39,27 @@ public class BuscaLupa {
 		driver = DriverFactory.iniciaApp();
 		
 		ExcelUtils.setExcelFile(Constantes.Path_TestData + Constantes.File_TestData, "PesquisaBarra");
-		
-		homePage = PageFactory.initElements(driver, HomePage.class);
-		pesquisaPage = PageFactory.initElements(driver, PesquisaPage.class);
-		pegaMassa = new PegaMassa();
+		PageFactory.initElements(driver, this);
+		ScreenObjectManager manager = new ScreenObjectManager(driver);
+		homeScreen = manager.getHomeScreen();
+		pesquisaScreen = manager.getPesquisaScreen();
+		pegaMassa = manager.getPegaMassa();
 	}
 	
 	@Test
 	public void testeDeBuscaPorLupaSucesso() throws Exception {
 		test = ExtendReport.createTest("PesquisaBarraSucesso");
 		
-		homePage.preencheBarraPesquisa(pegaMassa.PesquisaNaBarra());
+		homeScreen.preencheBarraPesquisa(pegaMassa.PesquisaNaBarra());
 		
-		homePage.clicaLupa();
+		homeScreen.clicaLupa();
 		
-		pesquisaPage.clicaProduto();
+		pesquisaScreen.clicaProduto();
 		
 		String condicao = pegaMassa.CondicaoAssertBarra();
 		String mensagem = pegaMassa.MenssagemAssertBarra();
 		
-		String pass = pesquisaPage.encontraNomePorduto(driver).getText();
+		String pass = pesquisaScreen.encontraNomePorduto(driver).getText();
 		Assert.assertTrue(pass.equals(condicao), mensagem);
 	}
 	
@@ -66,12 +67,12 @@ public class BuscaLupa {
 	public void testeDeBuscaPorLupaFalha() throws Exception {
 		test = ExtendReport.createTest("PesquisaBarraFalha");
 		
-		homePage.preencheBarraPesquisa(pegaMassa.PesquisaNaBarraErro());
+		homeScreen.preencheBarraPesquisa(pegaMassa.PesquisaNaBarraErro());
 		
-		homePage.clicaLupa();
+		homeScreen.clicaLupa();
 		
 		String elemento = pegaMassa.PesquisaNaBarraErro();
-		String resposta = pesquisaPage.encontraResultadoPesquisa(driver).getText();
+		String resposta = pesquisaScreen.encontraResultadoPesquisa(driver).getText();
 		Assert.assertTrue(resposta.equals("- No results for " + "\"" + elemento + "\" -"),
 				"Nenhum resultado encontrado para " + elemento + "!");
 	}
