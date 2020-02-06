@@ -5,8 +5,10 @@
     <classes>
       <class name="br.com.rsinet.hub_tdd.testes.BuscaHome">
         <methods>
-          <include name="extendReport"/>
+          <include name="testeDeBuscaPorTelaInicialSucesso"/>
+          <include name="finalizaExtendReport"/>
           <include name="testeDeBuscaPorTelaInicialFalha"/>
+          <include name="iniciaExtendReport"/>
           <include name="iniciaTeste"/>
           <include name="finalizaTeste"/>
         </methods>
