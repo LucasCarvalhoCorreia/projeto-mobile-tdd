@@ -7,7 +7,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import br.com.rsinet.hub_tdd.utils.DriverFactory;
+import br.com.rsinet.hub_tdd.manager.DriverFactory;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;

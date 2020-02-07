@@ -12,14 +12,14 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
 
+import br.com.rsinet.hub_tdd.excel.Constantes;
+import br.com.rsinet.hub_tdd.excel.ExcelUtils;
+import br.com.rsinet.hub_tdd.excel.PegaMassa;
+import br.com.rsinet.hub_tdd.extendReport.ExtendReport;
+import br.com.rsinet.hub_tdd.manager.DriverFactory;
+import br.com.rsinet.hub_tdd.manager.ScreenObjectManager;
 import br.com.rsinet.hub_tdd.screenObject.HomeScreen;
 import br.com.rsinet.hub_tdd.screenObject.PesquisaScreen;
-import br.com.rsinet.hub_tdd.utils.Constantes;
-import br.com.rsinet.hub_tdd.utils.DriverFactory;
-import br.com.rsinet.hub_tdd.utils.ExcelUtils;
-import br.com.rsinet.hub_tdd.utils.ExtendReport;
-import br.com.rsinet.hub_tdd.utils.PegaMassa;
-import br.com.rsinet.hub_tdd.utils.ScreenObjectManager;
 
 public class BuscaLupa {
 	

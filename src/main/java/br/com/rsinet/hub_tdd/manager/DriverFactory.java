@@ -1,4 +1,4 @@
-package br.com.rsinet.hub_tdd.utils;
+package br.com.rsinet.hub_tdd.manager;
 
 import java.net.URL;
 import java.util.concurrent.TimeUnit;

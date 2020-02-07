@@ -1,7 +1,8 @@
-package br.com.rsinet.hub_tdd.utils;
+package br.com.rsinet.hub_tdd.manager;
 
 import org.openqa.selenium.WebDriver;
 
+import br.com.rsinet.hub_tdd.excel.PegaMassa;
 import br.com.rsinet.hub_tdd.screenObject.CadastroScreen;
 import br.com.rsinet.hub_tdd.screenObject.HomeScreen;
 import br.com.rsinet.hub_tdd.screenObject.PesquisaScreen;

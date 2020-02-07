@@ -103,7 +103,7 @@ public class HomeScreen {
 		return encontraNoBt;
 	}
 	
-	public void clicaNoBt() {
+	public void clicaNoBt() throws InterruptedException {
 		encontraNoBt(driver).click();
 	}
 	
