@@ -60,7 +60,7 @@ public class BuscaHome {
 		
 		homeScreen.clicaBtLogin();
 		
-//		homeScreen.clicaNoBt();
+		homeScreen.clicaNoBt();
 		
 		homeScreen.clicaCategoriaSpeakers();
 		
@@ -90,7 +90,7 @@ public class BuscaHome {
 		
 		homeScreen.clicaBtLogin();
 		
-//		homeScreen.clicaNoBt();
+		homeScreen.clicaNoBt();
 		
 		homeScreen.clicaCategoriaSpeakers();
 		

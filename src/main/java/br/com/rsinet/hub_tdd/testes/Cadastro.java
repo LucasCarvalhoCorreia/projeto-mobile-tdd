@@ -70,9 +70,9 @@ public class Cadastro {
 		
 		cadastroScreen.preencheLastName(pegaMassa.LastName());
 		
-		cadastroScreen.preenchePhoneNumber(pegaMassa.Telefone());
-		
 		cadastroScreen.scroll(0.9, 0.0);
+		
+		cadastroScreen.preenchePhoneNumber(pegaMassa.Telefone());
 		
 		cadastroScreen.clicaCountry();	
 		
