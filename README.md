@@ -1,4 +1,4 @@
-# projeto-appium-bdd
+# Projeto-Appium-TDD
 Projeto desenvolvido com o objetivo de testar conhecimentos em relação a desenvolvimento de testes de automação em BDD com Cucumber para dispositivos Mobile.
 
 Conteúdo e descrições do projeto:
