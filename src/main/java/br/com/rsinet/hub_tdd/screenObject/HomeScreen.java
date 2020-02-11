@@ -97,15 +97,14 @@ public class HomeScreen {
 		encontraBtLogin().click();
 	}
 	
-	private MobileElement encontraNoBt(WebDriver driver) {
+	public MobileElement encontraNoBt(WebDriver driver) {
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		MobileElement encontraNoBt = (MobileElement) wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.Button[1]")));
 		return encontraNoBt;
 	}
-	
+
 	public void clicaNoBt() throws InterruptedException {
 		encontraNoBt(driver).click();
 	}
-	
 	
 }

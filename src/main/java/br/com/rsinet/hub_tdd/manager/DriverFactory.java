@@ -19,7 +19,7 @@ public class DriverFactory {
 	@SuppressWarnings({ "rawtypes" })
 	public static WebDriver iniciaApp() throws Exception {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability("deviceName", "Celular");
+		capabilities.setCapability("deviceName", "Celular 2");
 //		capabilities.setCapability("deviceName", "ASUS_X018D");
 		capabilities.setCapability("appPackage", "com.Advantage.aShopping");
 		capabilities.setCapability("appActivity", ".SplashActivity");
