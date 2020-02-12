@@ -26,7 +26,7 @@ public class CadastroScreen {
 	}
 	
 	private MobileElement encontraUserName() {
-		MobileElement userName = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.EditText"));
+		MobileElement userName = (MobileElement) driver.findElement(By.xpath("//*[@resource-id='com.Advantage.aShopping:id/AosEditTextUserName']/child::*[1]"));
 		return userName;
 	}
 	
@@ -37,7 +37,7 @@ public class CadastroScreen {
 	
 	
 	private MobileElement encontraEmail() {
-		MobileElement email = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.EditText"));
+		MobileElement email = (MobileElement) driver.findElement(By.xpath("//*[@resource-id='com.Advantage.aShopping:id/AosEditTextEmail']/child::*[1]"));
 		return email;
 	}
 	
@@ -47,7 +47,7 @@ public class CadastroScreen {
 	}
 	
 	private MobileElement encontraPassword() {
-		MobileElement password = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.widget.RelativeLayout/android.widget.EditText"));
+		MobileElement password = (MobileElement) driver.findElement(By.xpath("//*[@resource-id='com.Advantage.aShopping:id/AosEditTextPassword']/child::*[1]"));
 		return password;
 	}
 	
@@ -57,7 +57,7 @@ public class CadastroScreen {
 	}
 	
 	private MobileElement encontraConfirmPassword() {
-		MobileElement confirmPassword = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[4]/android.widget.RelativeLayout/android.widget.EditText"));
+		MobileElement confirmPassword = (MobileElement) driver.findElement(By.xpath("//*[@resource-id='com.Advantage.aShopping:id/AosEditTextConfirmPassword']/child::*[1]"));
 		return confirmPassword;
 	}
 	
@@ -67,7 +67,7 @@ public class CadastroScreen {
 	}
 	
 	private MobileElement encontraFirstName() {
-		MobileElement firstName = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[1]/android.widget.EditText"));
+		MobileElement firstName = (MobileElement) driver.findElement(By.xpath("//*[@resource-id='com.Advantage.aShopping:id/AosEditTextFirstName']/child::*[1]"));
 		return firstName;
 	}
 	
@@ -77,7 +77,7 @@ public class CadastroScreen {
 	}
 	
 	private MobileElement encontraLastName() {
-		MobileElement lastName = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[2]/android.widget.EditText"));
+		MobileElement lastName = (MobileElement) driver.findElement(By.xpath("//*[@resource-id='com.Advantage.aShopping:id/AosEditTextLastName']/child::*[1]"));
 		return lastName;
 	}
 	
@@ -88,7 +88,7 @@ public class CadastroScreen {
 	
 	private MobileElement encontraPhoneNumber() {
 
-		MobileElement phoneNumber = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.EditText"));
+		MobileElement phoneNumber = (MobileElement) driver.findElement(By.xpath("//*[@resource-id='com.Advantage.aShopping:id/AosEditTextPhoneNumber']/child::*[1]"));
 		return phoneNumber;
 	}
 	
@@ -112,7 +112,7 @@ public class CadastroScreen {
 	}
 	
 	private MobileElement encontraState() {
-		MobileElement state = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.EditText"));
+		MobileElement state = (MobileElement) driver.findElement(By.xpath("//*[@resource-id='com.Advantage.aShopping:id/AosEditTextState']/child::*[1]"));
 		return state;
 	}
 	
@@ -122,7 +122,7 @@ public class CadastroScreen {
 	}
 	
 	private MobileElement encontraAddress() {
-		MobileElement address = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.EditText"));
+		MobileElement address = (MobileElement) driver.findElement(By.xpath("//*[@resource-id='com.Advantage.aShopping:id/AosEditTextStreet']/child::*[1]"));
 		return address;
 	}
 	
@@ -132,7 +132,7 @@ public class CadastroScreen {
 	}
 	
 	private MobileElement encontraCity() {
-		MobileElement city = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText"));
+		MobileElement city = (MobileElement) driver.findElement(By.xpath("//*[@resource-id='com.Advantage.aShopping:id/AosEditTextCity']/child::*[1]"));
 		return city;
 	}
 	
@@ -142,7 +142,7 @@ public class CadastroScreen {
 	}
 	
 	private MobileElement encontraPostalCode() {
-		MobileElement postalCode = (MobileElement) driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[2]/android.widget.EditText"));
+		MobileElement postalCode = (MobileElement) driver.findElement(By.xpath("//*[@resource-id='com.Advantage.aShopping:id/AosEditTextZip']/child::*[1]"));
 		return postalCode;
 	}
 	
