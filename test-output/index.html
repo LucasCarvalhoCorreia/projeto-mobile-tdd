@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Teste_de_automa__o_em_TDD_com_TestNG">
-              <span class="suite-name border-passed">Teste de automação em TDD com TestNG</span>
+              <span class="suite-name border-failed">Teste de automação em TDD com TestNG</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Teste_de_automa__o_em_TDD_com_TestNG" class="hide-methods failed suite-Teste_de_automa__o_em_TDD_com_TestNG"> (hide)</a> <!-- hide-methods failed suite-Teste_de_automa__o_em_TDD_com_TestNG -->
+                      <a href="#" panel-name="suite-Teste_de_automa__o_em_TDD_com_TestNG" class="show-methods failed suite-Teste_de_automa__o_em_TDD_com_TestNG"> (show)</a> <!-- show-methods failed suite-Teste_de_automa__o_em_TDD_com_TestNG -->
+                    </span>
+                    <div class="method-list-content failed suite-Teste_de_automa__o_em_TDD_com_TestNG">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Teste_de_automa__o_em_TDD_com_TestNG" title="br.com.rsinet.hub_tdd.testes.Cadastro" hash-for-method="testeDeCadastroSucesso">testeDeCadastroSucesso</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Teste_de_automa__o_em_TDD_com_TestNG -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -125,11 +139,6 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Teste_de_automa__o_em_TDD_com_TestNG" title="br.com.rsinet.hub_tdd.testes.Cadastro" hash-for-method="testeDeCadastroFalha">testeDeCadastroFalha</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Teste_de_automa__o_em_TDD_com_TestNG" title="br.com.rsinet.hub_tdd.testes.Cadastro" hash-for-method="testeDeCadastroSucesso">testeDeCadastroSucesso</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Teste_de_automa__o_em_TDD_com_TestNG -->
                   </li>
                 </ul>
@@ -142,6 +151,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Teste_de_automa__o_em_TDD_com_TestNG" class="panel Teste_de_automa__o_em_TDD_com_TestNG">
+          <div class="suite-Teste_de_automa__o_em_TDD_com_TestNG-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">br.com.rsinet.hub_tdd.testes.Cadastro</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testeDeCadastroSucesso">
+                  </a> <!-- testeDeCadastroSucesso -->
+                  <span class="method-name">testeDeCadastroSucesso</span>
+                  <div class="stack-trace">java.lang.AssertionError: Cadastro efetuado com sucesso! did not expect to find [true] but found [false]
+	at br.com.rsinet.hub_tdd.testes.Cadastro.testeDeCadastroSucesso(Cadastro.java:102)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Teste_de_automa__o_em_TDD_com_TestNG-class-failed -->
           <div class="suite-Teste_de_automa__o_em_TDD_com_TestNG-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -197,13 +226,6 @@
                   <a name="testeDeCadastroFalha">
                   </a> <!-- testeDeCadastroFalha -->
                   <span class="method-name">testeDeCadastroFalha</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testeDeCadastroSucesso">
-                  </a> <!-- testeDeCadastroSucesso -->
-                  <span class="method-name">testeDeCadastroSucesso</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -266,27 +288,27 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testeDeCadastroSucesso')
 data.setCell(0, 2, 'br.com.rsinet.hub_tdd.testes.Cadastro')
-data.setCell(0, 3, 39021);
+data.setCell(0, 3, 34395);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testeDeBuscaPorTelaInicialFalha')
 data.setCell(1, 2, 'br.com.rsinet.hub_tdd.testes.BuscaHome')
-data.setCell(1, 3, 22917);
+data.setCell(1, 3, 17075);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testeDeBuscaPorTelaInicialSucesso')
-data.setCell(2, 2, 'br.com.rsinet.hub_tdd.testes.BuscaHome')
-data.setCell(2, 3, 19264);
+data.setCell(2, 1, 'testeDeCadastroFalha')
+data.setCell(2, 2, 'br.com.rsinet.hub_tdd.testes.Cadastro')
+data.setCell(2, 3, 12601);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testeDeCadastroFalha')
-data.setCell(3, 2, 'br.com.rsinet.hub_tdd.testes.Cadastro')
-data.setCell(3, 3, 15876);
+data.setCell(3, 1, 'testeDeBuscaPorTelaInicialSucesso')
+data.setCell(3, 2, 'br.com.rsinet.hub_tdd.testes.BuscaHome')
+data.setCell(3, 3, 11512);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testeDeBuscaPorLupaSucesso')
 data.setCell(4, 2, 'br.com.rsinet.hub_tdd.testes.BuscaLupa')
-data.setCell(4, 3, 6879);
+data.setCell(4, 3, 5702);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testeDeBuscaPorLupaFalha')
 data.setCell(5, 2, 'br.com.rsinet.hub_tdd.testes.BuscaLupa')
-data.setCell(5, 3, 4538);
+data.setCell(5, 3, 4261);
 window.suiteTableData['Teste_de_automa__o_em_TDD_com_TestNG']= { tableData: data, tableDiv: 'times-div-Teste_de_automa__o_em_TDD_com_TestNG'}
 return data;
 }
@@ -327,110 +349,112 @@ return data;
               <div class="chronological-class-name">br.com.rsinet.hub_tdd.testes.BuscaLupa</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">extendReport</span>
-                <span class="method-start">94 ms</span>
+                <span class="method-start">92 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">br.com.rsinet.hub_tdd.testes.Cadastro</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">extendReport</span>
-                <span class="method-start">95 ms</span>
+                <span class="method-start">92 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">iniciaTeste</span>
-                <span class="method-start">112 ms</span>
+                <span class="method-start">110 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testeDeCadastroFalha</span>
-                <span class="method-start">17057 ms</span>
+                <span class="method-start">8470 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">finalizaTeste([TestResult name=testeDeCadastroFalha status=SUCCESS method=Cadastro.testeDeCadastroFalha()[pri:0, i...)</span>
-                <span class="method-start">32935 ms</span>
+                <span class="method-start">21073 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">iniciaTeste</span>
-                <span class="method-start">34689 ms</span>
+                <span class="method-start">21779 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testeDeCadastroSucesso</span>
-                <span class="method-start">48395 ms</span>
+                <span class="method-start">29211 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">finalizaTeste([TestResult name=testeDeCadastroSucesso status=SUCCESS method=Cadastro.testeDeCadastroSucesso()[pri:...)</span>
-                <span class="method-start">87419 ms</span>
+                <span class="method-name">finalizaTeste([TestResult name=testeDeCadastroSucesso status=FAILURE method=Cadastro.testeDeCadastroSucesso()[pri:...)</span>
+                <span class="method-start">63608 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">br.com.rsinet.hub_tdd.testes.BuscaLupa</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">iniciaTeste</span>
-                <span class="method-start">89796 ms</span>
+                <span class="method-start">64475 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testeDeBuscaPorLupaFalha</span>
-                <span class="method-start">103104 ms</span>
+                <span class="method-start">73053 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">finalizaTeste([TestResult name=testeDeBuscaPorLupaFalha status=SUCCESS method=BuscaLupa.testeDeBuscaPorLupaFalha()...)</span>
-                <span class="method-start">107643 ms</span>
+                <span class="method-start">77314 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">iniciaTeste</span>
-                <span class="method-start">109149 ms</span>
+                <span class="method-start">78213 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testeDeBuscaPorLupaSucesso</span>
-                <span class="method-start">122443 ms</span>
+                <span class="method-start">86725 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">finalizaTeste([TestResult name=testeDeBuscaPorLupaSucesso status=SUCCESS method=BuscaLupa.testeDeBuscaPorLupaSuces...)</span>
-                <span class="method-start">129323 ms</span>
+                <span class="method-start">92428 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">br.com.rsinet.hub_tdd.testes.BuscaHome</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">iniciaTeste</span>
-                <span class="method-start">132284 ms</span>
+                <span class="method-start">93597 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testeDeBuscaPorTelaInicialFalha</span>
-                <span class="method-start">148466 ms</span>
+                <span class="method-start">101024 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">finalizaTeste([TestResult name=testeDeBuscaPorTelaInicialFalha status=SUCCESS method=BuscaHome.testeDeBuscaPorTela...)</span>
-                <span class="method-start">171383 ms</span>
+                <span class="method-start">118100 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">iniciaTeste</span>
-                <span class="method-start">175722 ms</span>
+                <span class="method-start">119146 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testeDeBuscaPorTelaInicialSucesso</span>
-                <span class="method-start">189581 ms</span>
+                <span class="method-start">126886 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">finalizaTeste([TestResult name=testeDeBuscaPorTelaInicialSucesso status=SUCCESS method=BuscaHome.testeDeBuscaPorTe...)</span>
-                <span class="method-start">208847 ms</span>
+                <span class="method-start">138399 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">finalizaExtendReport</span>
-                <span class="method-start">213767 ms</span>
+                <span class="method-start">139346 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">br.com.rsinet.hub_tdd.testes.BuscaLupa</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">finalizaExtendReport</span>
-                <span class="method-start">214009 ms</span>
+                <span class="method-start">139857 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">br.com.rsinet.hub_tdd.testes.Cadastro</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">finalizaExtendReport</span>
-                <span class="method-start">214068 ms</span>
+                <span class="method-start">139966 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

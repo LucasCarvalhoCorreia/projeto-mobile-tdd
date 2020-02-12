@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Teste de automação em TDD com TestNG]">
   <test thread-count="5" name="Suite de testes para projeto de automação em TDD(failed)">
     <classes>
-      <class name="br.com.rsinet.hub_tdd.testes.BuscaLupa">
+      <class name="br.com.rsinet.hub_tdd.testes.Cadastro">
         <methods>
           <include name="iniciaTeste"/>
           <include name="finalizaTeste"/>
-          <include name="finalizaExtendReport"/>
           <include name="extendReport"/>
-          <include name="testeDeBuscaPorLupaSucesso"/>
+          <include name="testeDeCadastroSucesso"/>
+          <include name="finalizaExtendReport"/>
         </methods>
-      </class> <!-- br.com.rsinet.hub_tdd.testes.BuscaLupa -->
+      </class> <!-- br.com.rsinet.hub_tdd.testes.Cadastro -->
     </classes>
   </test> <!-- Suite de testes para projeto de automação em TDD(failed) -->
 </suite> <!-- Failed suite [Teste de automação em TDD com TestNG] -->
