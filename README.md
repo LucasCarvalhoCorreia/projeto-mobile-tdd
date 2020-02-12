@@ -35,7 +35,7 @@ projeto-appium-tdd
       - Cadastro.java (Classe responsável por executar os cenários de teste de cadastro.)
 
   - target (Pasta que guarda os prints e o relatório do extend report.)
-    - Reports.html (Relatório gerado pelo extend report o final dos testes.)
+    - Reports.html (Relatório gerado pelo extend report no final dos testes.)
   
   - ExtendTest.xml (Suíte de testes.)
   
