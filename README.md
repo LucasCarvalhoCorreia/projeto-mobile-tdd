@@ -20,34 +20,23 @@ projeto-appium-tdd
     - br.com.rsinet.hub_tdd.manager (Pacote responsável por agrupar as classes que vão manipular os drivers.)
       - DriverFactory.java (Classe responsável por criar os drivers, iniciar e fechar o app.)
       - ScreenObjectManager.java (Classe responsável por gerenciar os drivers das telas de teste.)
-      - TestContext.java (Classe responsável por manipular o driver entre as telas de teste.)
       
     - br.com.rsinet.hub_tdd.screenObject (Pacote responsável por agrupar as classes que vão manipular os métodos relacionados as telas de teste.)
       - CadastroScreen.java (Classe responsável por localizar e executar métodos na tela de cadastro.)
       - HomeScreen.java (Classe responsável por localizar e executar métodos na tela inicial.)
       - PesquisaScreen.java (Classe responsável por localizar e executar métodos na tela de pesquisa.)
       
-    - br.com.rsinet.hub_tdd.stepDefinitions (Pacote responsável por agrupar as classes que vão executar os passos de teste do cucumber.)
-      - Cadastrar.java (Classe responsável por executar os passos dos cenários de teste de cadastro descritos no stories.)
-      - ConsultaPorBarraDePesquisa.java (Classe responsável por executar os passos dos cenários de teste de consulta por lupa descritos no stories.)
-      - ConsultaPorCategoria.java (Classe responsável por executar os passos dos cenários de teste de consulta por categoria descritos no stories.)
-      - Hooks.java (Classe responsável por iniciar e fechar o app, gerar os relatórios e tirar as prints dos cenários de teste.)
-      
     - br.com.rsinet.hub_tdd.testData (Pacote que contém a classe que contem a massa de dados.)
       - MassaDeDados.xlsx (Arquivo responsável por armazenar os dados da massa de dados.)
       
-    - br.com.rsinet.hub_tdd.testRunner (Pacote que contém a classe que roda todos os testes.)
-      - TestRunner.java (Classe responsável por executar todos os testes através do cucumber.)
-      
-    - Feature (Pacote responsável por agrupar as features que contém os stories de casos de testes.)
-      - Cadastrar.feature (Arquivo que contém os stories de cenários de teste de cadastro.)
-      - ConsultaPorBarraDePesquisa.feature (Arquivo que contém os stories de cenários de teste de consulta por lupa.)
-      - ConsultaPorCategoria.feature (Arquivo que contém os stories de cenários de teste de consulta por categoria.)
-    
-  - configs (Pasta que contém o arquivo reponsável por configurar a interface do extend report.)
-    - extension-config.xml (Arquivo responsável por configurar a interface do extend report.)
-  
+    - br.com.rsinet.hub_tdd.testes (Pacote responsável por agrupar as classes que vão executar os passos de teste do cucumber.)
+      - BuscaHome.java (Classe responsável por executar os cenários de teste de consulta por categoria.)
+      - BuscaLupa.java (Classe responsável por executar os cenários de teste de consulta por lupa.)
+      - Cadastro.java (Classe responsável por executar os cenários de teste de cadastro.)
+
   - target (Pasta que guarda os prints e o relatório do extend report.)
     - Reports.html (Relatório gerado pelo extend report o final dos testes.)
+  
+  - ExtendTest.xml (Suíte de testes.)
   
   - pom.xml (Arquivo responsável por baixar e orgnizar as dependências do maven.)
