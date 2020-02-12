@@ -1,49 +1,53 @@
 # Projeto-Appium-TDD
-Projeto desenvolvido com o objetivo de testar conhecimentos em relação a desenvolvimento de testes de automação em BDD com Cucumber para dispositivos Mobile.
+
+Projeto desenvolvido com o objetivo de testar conhecimentos em relação a desenvolvimento de testes de automação em TDD para dispositivos móveis.
 
 Conteúdo e descrições do projeto:
 
-projeto-appium-bdd
+projeto-appium-tdd
 
-src/main/java (pasta onde estão as classes e pacotes)
-
-br.com.rsinet.hub_bdd.pageFactory (pacote onde foram criadas as classes de manipulação de elementos por pagina.)
-  CadastroPage.java (classe responsável por executar os elementos localizados na página de cadastro.)
-  HomePage.java (classe responsável por executar os elementos localizados na página inicial.)
-  PagamentoPage.java (classe responsável por executar os elementos localizados na página de pagamento dos produtos.)
-  PesquisaPage.java (classe responsável por executar os elementos localizados na página de pesquisa de produtos.)
-
-br.com.rsinet.hub_bdd.stepDefinitions (pacote onde foram criadas as classes para executar os cenários descritos nas features.)
-  Cadastro.java (classe responsável por testar os cenários descritos na feature de cadastro.)
-  ConsultaPorBarraDePesquisa.java (classe responsável por testar os cenários descritos na feature de consulta por barra de pesquisa.)
-  ConsultaPorCategoria.java (classe responsável por testar os cenários descritos na feature de consulta de produto por categoria na tela inicial.)
+  - src/main/java (pastas onde estão locaizados os pacotes do projeto.)
   
-br.com.rsinet.hub_bdd.testData (pacote onde está o arquivo responsável por armazenar a massa de dados.)
-  MassaDeDados.xlsx (arquivo de massa de dados.)
-
-br.com.rsinet.hub_bdd.testRunner (pacote onde está a classe responsável por executar todos os testes de uma vez.)
-  TestRunner.java (classe responsável por executar todos os cenários das features aplicando funcionalidades do cucumber e gerando o extend report no final.)
-
-br.com.rsinet.hub_bdd.utils (pacote onde estão classes com algumas utilidades do projeto.)
-  Constantes.java (classe responsável por localizar a coluna de cada elemento utilizado nos testes dentro do arquivo de massa de dados.)
-  DriverFactory.java (classe que contém métodos responsáveis por iniciar e fechar o browser dos testes.)
-  ExcelUtils.java (classe responsável por fazer a comunicação dos testes com o arquivo de massa de dados.)
-  PegaMassa.java (classe responsável por pegar dados do arquivo de massa e retornar na classe de teste.)
-  Prints.java (classe que contem métodos responsáveis por tirar prints dos cenários de teste.)
-
-configs
-
-extension-config.xml (arquivo responsável por executar o extendreport e suas configurações.)
-
-Features (pasta onde estão localizados os arquivos de feature onde são escritos os stories dos usuários para o desenvolvimento dos cenários.)
-  Cadastro.feature
-  ConsultaPorBarraDePesquisa.feature
-  ConsultaPorCategoria.feature
-
-target
-  cucumber-reports
-  Reports.html (arquivo gerado depois da execução dos testes que demonstra um relatório do comportamento de cada teste.)
-falhas (pasta onde são guardados os prints de testes de falha.)
-  sucessos (pasta onde são guardados os prints de testes de sucesso.)
-
-pom.xml (arquivo onde são declaradas as dependencias do maven.)
+    - br.com.rsinet.hub_bdd.excel (Pacote responsável por agrupar as classes que vão manipular dados relacionados ao excel.)
+      - Constantes.java (Classe responsável por identificar as colunas dentro do arquivo de massa de dados através de variáveis.)
+      - ExcelUtils.java (Classe responsável por fazer a comunicação do arquivo de massa de dados com a automação.)
+      - PegaMassa.java (Classe responsável por pegar os dos armazenados na massa de dados.)
+      
+    - br.com.rsinet.hub_tdd.extendReport (Pacote responsável por agrupar as classes que vão manipular dados relacionados ao Extend Report.)
+      - ExtendReport.java (Classe responsável por manipular o relatorio gerado pelo extend report.)
+      - Prints.java (Classe responsável por tirar os prints.)
+      
+    - br.com.rsinet.hub_tdd.manager (Pacote responsável por agrupar as classes que vão manipular os drivers.)
+      - DriverFactory.java (Classe responsável por criar os drivers, iniciar e fechar o app.)
+      - ScreenObjectManager.java (Classe responsável por gerenciar os drivers das telas de teste.)
+      - TestContext.java (Classe responsável por manipular o driver entre as telas de teste.)
+      
+    - br.com.rsinet.hub_tdd.screenObject (Pacote responsável por agrupar as classes que vão manipular os métodos relacionados as telas de teste.)
+      - CadastroScreen.java (Classe responsável por localizar e executar métodos na tela de cadastro.)
+      - HomeScreen.java (Classe responsável por localizar e executar métodos na tela inicial.)
+      - PesquisaScreen.java (Classe responsável por localizar e executar métodos na tela de pesquisa.)
+      
+    - br.com.rsinet.hub_tdd.stepDefinitions (Pacote responsável por agrupar as classes que vão executar os passos de teste do cucumber.)
+      - Cadastrar.java (Classe responsável por executar os passos dos cenários de teste de cadastro descritos no stories.)
+      - ConsultaPorBarraDePesquisa.java (Classe responsável por executar os passos dos cenários de teste de consulta por lupa descritos no stories.)
+      - ConsultaPorCategoria.java (Classe responsável por executar os passos dos cenários de teste de consulta por categoria descritos no stories.)
+      - Hooks.java (Classe responsável por iniciar e fechar o app, gerar os relatórios e tirar as prints dos cenários de teste.)
+      
+    - br.com.rsinet.hub_tdd.testData (Pacote que contém a classe que contem a massa de dados.)
+      - MassaDeDados.xlsx (Arquivo responsável por armazenar os dados da massa de dados.)
+      
+    - br.com.rsinet.hub_tdd.testRunner (Pacote que contém a classe que roda todos os testes.)
+      - TestRunner.java (Classe responsável por executar todos os testes através do cucumber.)
+      
+    - Feature (Pacote responsável por agrupar as features que contém os stories de casos de testes.)
+      - Cadastrar.feature (Arquivo que contém os stories de cenários de teste de cadastro.)
+      - ConsultaPorBarraDePesquisa.feature (Arquivo que contém os stories de cenários de teste de consulta por lupa.)
+      - ConsultaPorCategoria.feature (Arquivo que contém os stories de cenários de teste de consulta por categoria.)
+    
+  - configs (Pasta que contém o arquivo reponsável por configurar a interface do extend report.)
+    - extension-config.xml (Arquivo responsável por configurar a interface do extend report.)
+  
+  - target (Pasta que guarda os prints e o relatório do extend report.)
+    - Reports.html (Relatório gerado pelo extend report o final dos testes.)
+  
+  - pom.xml (Arquivo responsável por baixar e orgnizar as dependências do maven.)
