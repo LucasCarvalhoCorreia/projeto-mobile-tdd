@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Teste de automação em TDD com TestNG" duration-ms="151936" started-at="2020-02-12T14:19:40 BRT" finished-at="2020-02-12T14:22:12 BRT">
+  <suite name="Teste de automação em TDD com TestNG" duration-ms="155423" started-at="2020-02-13T09:55:07 BRT" finished-at="2020-02-13T09:57:43 BRT">
     <groups>
     </groups>
-    <test name="Suite de testes para projeto de automação em TDD" duration-ms="151936" started-at="2020-02-12T14:19:40 BRT" finished-at="2020-02-12T14:22:12 BRT">
+    <test name="Suite de testes para projeto de automação em TDD" duration-ms="155423" started-at="2020-02-13T09:55:07 BRT" finished-at="2020-02-13T09:57:43 BRT">
       <class name="br.com.rsinet.hub_tdd.testes.Cadastro">
-        <test-method status="PASS" signature="extendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="extendReport" is-config="true" duration-ms="0" started-at="2020-02-12T14:19:40 BRT" finished-at="2020-02-12T14:19:40 BRT">
+        <test-method status="PASS" signature="extendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="extendReport" is-config="true" duration-ms="1" started-at="2020-02-13T09:55:07 BRT" finished-at="2020-02-13T09:55:07 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extendReport -->
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="iniciaTeste" is-config="true" duration-ms="13104" started-at="2020-02-12T14:19:40 BRT" finished-at="2020-02-12T14:19:53 BRT">
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="iniciaTeste" is-config="true" duration-ms="17876" started-at="2020-02-13T09:55:07 BRT" finished-at="2020-02-13T09:55:25 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniciaTeste -->
-        <test-method status="PASS" signature="testeDeCadastroFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="testeDeCadastroFalha" duration-ms="13390" started-at="2020-02-12T14:19:53 BRT" finished-at="2020-02-12T14:20:07 BRT">
+        <test-method status="PASS" signature="testeDeCadastroFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="testeDeCadastroFalha" duration-ms="10522" started-at="2020-02-13T09:55:25 BRT" finished-at="2020-02-13T09:55:36 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeDeCadastroFalha -->
-        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="finalizaTeste" is-config="true" duration-ms="1018" started-at="2020-02-12T14:20:07 BRT" finished-at="2020-02-12T14:20:08 BRT">
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="finalizaTeste" is-config="true" duration-ms="1371" started-at="2020-02-13T09:55:36 BRT" finished-at="2020-02-13T09:55:37 BRT">
           <params>
             <param index="0">
               <value>
@@ -30,15 +30,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaTeste -->
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="iniciaTeste" is-config="true" duration-ms="8824" started-at="2020-02-12T14:20:08 BRT" finished-at="2020-02-12T14:20:16 BRT">
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="iniciaTeste" is-config="true" duration-ms="9329" started-at="2020-02-13T09:55:37 BRT" finished-at="2020-02-13T09:55:46 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniciaTeste -->
-        <test-method status="PASS" signature="testeDeCadastroSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="testeDeCadastroSucesso" duration-ms="35227" started-at="2020-02-12T14:20:16 BRT" finished-at="2020-02-12T14:20:52 BRT">
+        <test-method status="PASS" signature="testeDeCadastroSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="testeDeCadastroSucesso" duration-ms="29956" started-at="2020-02-13T09:55:46 BRT" finished-at="2020-02-13T09:56:16 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeDeCadastroSucesso -->
-        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="finalizaTeste" is-config="true" duration-ms="1251" started-at="2020-02-12T14:20:52 BRT" finished-at="2020-02-12T14:20:53 BRT">
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="finalizaTeste" is-config="true" duration-ms="2746" started-at="2020-02-13T09:56:16 BRT" finished-at="2020-02-13T09:56:19 BRT">
           <params>
             <param index="0">
               <value>
@@ -49,25 +49,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaTeste -->
-        <test-method status="PASS" signature="finalizaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="finalizaExtendReport" is-config="true" duration-ms="105" started-at="2020-02-12T14:22:12 BRT" finished-at="2020-02-12T14:22:12 BRT">
+        <test-method status="PASS" signature="finalizaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="finalizaExtendReport" is-config="true" duration-ms="104" started-at="2020-02-13T09:57:42 BRT" finished-at="2020-02-13T09:57:43 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaExtendReport -->
       </class> <!-- br.com.rsinet.hub_tdd.testes.Cadastro -->
       <class name="br.com.rsinet.hub_tdd.testes.BuscaHome">
-        <test-method status="PASS" signature="iniciaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="iniciaExtendReport" is-config="true" duration-ms="103" started-at="2020-02-12T14:19:40 BRT" finished-at="2020-02-12T14:19:40 BRT">
+        <test-method status="PASS" signature="iniciaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="iniciaExtendReport" is-config="true" duration-ms="98" started-at="2020-02-13T09:55:07 BRT" finished-at="2020-02-13T09:55:07 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniciaExtendReport -->
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="iniciaTeste" is-config="true" duration-ms="8670" started-at="2020-02-12T14:21:22 BRT" finished-at="2020-02-12T14:21:30 BRT">
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="iniciaTeste" is-config="true" duration-ms="9881" started-at="2020-02-13T09:56:53 BRT" finished-at="2020-02-13T09:57:03 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniciaTeste -->
-        <test-method status="PASS" signature="testeDeBuscaPorTelaInicialFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="testeDeBuscaPorTelaInicialFalha" duration-ms="17721" started-at="2020-02-12T14:21:30 BRT" finished-at="2020-02-12T14:21:48 BRT">
+        <test-method status="PASS" signature="testeDeBuscaPorTelaInicialFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="testeDeBuscaPorTelaInicialFalha" duration-ms="16952" started-at="2020-02-13T09:57:03 BRT" finished-at="2020-02-13T09:57:19 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeDeBuscaPorTelaInicialFalha -->
-        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="finalizaTeste" is-config="true" duration-ms="1036" started-at="2020-02-12T14:21:48 BRT" finished-at="2020-02-12T14:21:49 BRT">
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="finalizaTeste" is-config="true" duration-ms="856" started-at="2020-02-13T09:57:19 BRT" finished-at="2020-02-13T09:57:20 BRT">
           <params>
             <param index="0">
               <value>
@@ -78,15 +78,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaTeste -->
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="iniciaTeste" is-config="true" duration-ms="8746" started-at="2020-02-12T14:21:49 BRT" finished-at="2020-02-12T14:21:58 BRT">
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="iniciaTeste" is-config="true" duration-ms="9253" started-at="2020-02-13T09:57:20 BRT" finished-at="2020-02-13T09:57:30 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniciaTeste -->
-        <test-method status="PASS" signature="testeDeBuscaPorTelaInicialSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="testeDeBuscaPorTelaInicialSucesso" duration-ms="12381" started-at="2020-02-12T14:21:58 BRT" finished-at="2020-02-12T14:22:10 BRT">
+        <test-method status="PASS" signature="testeDeBuscaPorTelaInicialSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="testeDeBuscaPorTelaInicialSucesso" duration-ms="11368" started-at="2020-02-13T09:57:30 BRT" finished-at="2020-02-13T09:57:41 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeDeBuscaPorTelaInicialSucesso -->
-        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="finalizaTeste" is-config="true" duration-ms="1082" started-at="2020-02-12T14:22:10 BRT" finished-at="2020-02-12T14:22:11 BRT">
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="finalizaTeste" is-config="true" duration-ms="957" started-at="2020-02-13T09:57:41 BRT" finished-at="2020-02-13T09:57:42 BRT">
           <params>
             <param index="0">
               <value>
@@ -97,25 +97,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaTeste -->
-        <test-method status="PASS" signature="finalizaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="finalizaExtendReport" is-config="true" duration-ms="495" started-at="2020-02-12T14:22:11 BRT" finished-at="2020-02-12T14:22:12 BRT">
+        <test-method status="PASS" signature="finalizaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="finalizaExtendReport" is-config="true" duration-ms="464" started-at="2020-02-13T09:57:42 BRT" finished-at="2020-02-13T09:57:42 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaExtendReport -->
       </class> <!-- br.com.rsinet.hub_tdd.testes.BuscaHome -->
       <class name="br.com.rsinet.hub_tdd.testes.BuscaLupa">
-        <test-method status="PASS" signature="extendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="extendReport" is-config="true" duration-ms="1" started-at="2020-02-12T14:19:40 BRT" finished-at="2020-02-12T14:19:40 BRT">
+        <test-method status="PASS" signature="extendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="extendReport" is-config="true" duration-ms="1" started-at="2020-02-13T09:55:07 BRT" finished-at="2020-02-13T09:55:07 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extendReport -->
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="iniciaTeste" is-config="true" duration-ms="8830" started-at="2020-02-12T14:20:53 BRT" finished-at="2020-02-12T14:21:02 BRT">
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="iniciaTeste" is-config="true" duration-ms="11064" started-at="2020-02-13T09:56:19 BRT" finished-at="2020-02-13T09:56:30 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniciaTeste -->
-        <test-method status="PASS" signature="testeDeBuscaPorLupaFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="testeDeBuscaPorLupaFalha" duration-ms="3469" started-at="2020-02-12T14:21:02 BRT" finished-at="2020-02-12T14:21:05 BRT">
+        <test-method status="PASS" signature="testeDeBuscaPorLupaFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="testeDeBuscaPorLupaFalha" duration-ms="4286" started-at="2020-02-13T09:56:30 BRT" finished-at="2020-02-13T09:56:34 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeDeBuscaPorLupaFalha -->
-        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="finalizaTeste" is-config="true" duration-ms="843" started-at="2020-02-12T14:21:05 BRT" finished-at="2020-02-12T14:21:06 BRT">
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="finalizaTeste" is-config="true" duration-ms="1170" started-at="2020-02-13T09:56:34 BRT" finished-at="2020-02-13T09:56:36 BRT">
           <params>
             <param index="0">
               <value>
@@ -126,15 +126,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaTeste -->
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="iniciaTeste" is-config="true" duration-ms="8889" started-at="2020-02-12T14:21:06 BRT" finished-at="2020-02-12T14:21:15 BRT">
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="iniciaTeste" is-config="true" duration-ms="9913" started-at="2020-02-13T09:56:36 BRT" finished-at="2020-02-13T09:56:46 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniciaTeste -->
-        <test-method status="PASS" signature="testeDeBuscaPorLupaSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="testeDeBuscaPorLupaSucesso" duration-ms="5475" started-at="2020-02-12T14:21:15 BRT" finished-at="2020-02-12T14:21:20 BRT">
+        <test-method status="PASS" signature="testeDeBuscaPorLupaSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="testeDeBuscaPorLupaSucesso" duration-ms="6153" started-at="2020-02-13T09:56:46 BRT" finished-at="2020-02-13T09:56:52 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeDeBuscaPorLupaSucesso -->
-        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="finalizaTeste" is-config="true" duration-ms="1127" started-at="2020-02-12T14:21:20 BRT" finished-at="2020-02-12T14:21:22 BRT">
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="finalizaTeste" is-config="true" duration-ms="962" started-at="2020-02-13T09:56:52 BRT" finished-at="2020-02-13T09:56:53 BRT">
           <params>
             <param index="0">
               <value>
@@ -145,7 +145,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaTeste -->
-        <test-method status="PASS" signature="finalizaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="finalizaExtendReport" is-config="true" duration-ms="110" started-at="2020-02-12T14:22:12 BRT" finished-at="2020-02-12T14:22:12 BRT">
+        <test-method status="PASS" signature="finalizaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="finalizaExtendReport" is-config="true" duration-ms="103" started-at="2020-02-13T09:57:42 BRT" finished-at="2020-02-13T09:57:42 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaExtendReport -->
