@@ -1,155 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Teste de automação em TDD com TestNG" duration-ms="155423" started-at="2020-02-13T09:55:07 BRT" finished-at="2020-02-13T09:57:43 BRT">
+  <suite name="Default suite" duration-ms="57398" started-at="2020-02-18T09:51:52 BRT" finished-at="2020-02-18T09:52:50 BRT">
     <groups>
     </groups>
-    <test name="Suite de testes para projeto de automação em TDD" duration-ms="155423" started-at="2020-02-13T09:55:07 BRT" finished-at="2020-02-13T09:57:43 BRT">
+    <test name="Default test" duration-ms="57398" started-at="2020-02-18T09:51:52 BRT" finished-at="2020-02-18T09:52:50 BRT">
       <class name="br.com.rsinet.hub_tdd.testes.Cadastro">
-        <test-method status="PASS" signature="extendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="extendReport" is-config="true" duration-ms="1" started-at="2020-02-13T09:55:07 BRT" finished-at="2020-02-13T09:55:07 BRT">
+        <test-method status="PASS" signature="extendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@5a1c0542]" name="extendReport" is-config="true" duration-ms="89" started-at="2020-02-18T09:51:52 BRT" finished-at="2020-02-18T09:51:52 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extendReport -->
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="iniciaTeste" is-config="true" duration-ms="17876" started-at="2020-02-13T09:55:07 BRT" finished-at="2020-02-13T09:55:25 BRT">
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@5a1c0542]" name="iniciaTeste" is-config="true" duration-ms="9515" started-at="2020-02-18T09:51:52 BRT" finished-at="2020-02-18T09:52:02 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniciaTeste -->
-        <test-method status="PASS" signature="testeDeCadastroFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="testeDeCadastroFalha" duration-ms="10522" started-at="2020-02-13T09:55:25 BRT" finished-at="2020-02-13T09:55:36 BRT">
+        <test-method status="PASS" signature="testeDeCadastroFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@5a1c0542]" name="testeDeCadastroFalha" duration-ms="10163" started-at="2020-02-18T09:52:02 BRT" finished-at="2020-02-18T09:52:12 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeDeCadastroFalha -->
-        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="finalizaTeste" is-config="true" duration-ms="1371" started-at="2020-02-13T09:55:36 BRT" finished-at="2020-02-13T09:55:37 BRT">
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@5a1c0542]" name="finalizaTeste" is-config="true" duration-ms="632" started-at="2020-02-18T09:52:12 BRT" finished-at="2020-02-18T09:52:13 BRT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testeDeCadastroFalha status=SUCCESS method=Cadastro.testeDeCadastroFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f] output={null}]]]>
+                <![CDATA[[TestResult name=testeDeCadastroFalha status=SUCCESS method=Cadastro.testeDeCadastroFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@5a1c0542] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaTeste -->
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="iniciaTeste" is-config="true" duration-ms="9329" started-at="2020-02-13T09:55:37 BRT" finished-at="2020-02-13T09:55:46 BRT">
+        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@5a1c0542]" name="iniciaTeste" is-config="true" duration-ms="8889" started-at="2020-02-18T09:52:13 BRT" finished-at="2020-02-18T09:52:21 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniciaTeste -->
-        <test-method status="PASS" signature="testeDeCadastroSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="testeDeCadastroSucesso" duration-ms="29956" started-at="2020-02-13T09:55:46 BRT" finished-at="2020-02-13T09:56:16 BRT">
+        <test-method status="FAIL" signature="testeDeCadastroSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@5a1c0542]" name="testeDeCadastroSucesso" duration-ms="27115" started-at="2020-02-18T09:52:21 BRT" finished-at="2020-02-18T09:52:49 BRT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Cadastro efetuado com sucesso! did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Cadastro efetuado com sucesso! did not expect to find [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at br.com.rsinet.hub_tdd.testes.Cadastro.testeDeCadastroSucesso(Cadastro.java:102)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testeDeCadastroSucesso -->
-        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="finalizaTeste" is-config="true" duration-ms="2746" started-at="2020-02-13T09:56:16 BRT" finished-at="2020-02-13T09:56:19 BRT">
+        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@5a1c0542]" name="finalizaTeste" is-config="true" duration-ms="566" started-at="2020-02-18T09:52:49 BRT" finished-at="2020-02-18T09:52:49 BRT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testeDeCadastroSucesso status=SUCCESS method=Cadastro.testeDeCadastroSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f] output={null}]]]>
+                <![CDATA[[TestResult name=testeDeCadastroSucesso status=FAILURE method=Cadastro.testeDeCadastroSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@5a1c0542] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaTeste -->
-        <test-method status="PASS" signature="finalizaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@394e1a0f]" name="finalizaExtendReport" is-config="true" duration-ms="104" started-at="2020-02-13T09:57:42 BRT" finished-at="2020-02-13T09:57:43 BRT">
+        <test-method status="PASS" signature="finalizaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.Cadastro@5a1c0542]" name="finalizaExtendReport" is-config="true" duration-ms="404" started-at="2020-02-18T09:52:49 BRT" finished-at="2020-02-18T09:52:50 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finalizaExtendReport -->
       </class> <!-- br.com.rsinet.hub_tdd.testes.Cadastro -->
-      <class name="br.com.rsinet.hub_tdd.testes.BuscaHome">
-        <test-method status="PASS" signature="iniciaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="iniciaExtendReport" is-config="true" duration-ms="98" started-at="2020-02-13T09:55:07 BRT" finished-at="2020-02-13T09:55:07 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- iniciaExtendReport -->
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="iniciaTeste" is-config="true" duration-ms="9881" started-at="2020-02-13T09:56:53 BRT" finished-at="2020-02-13T09:57:03 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- iniciaTeste -->
-        <test-method status="PASS" signature="testeDeBuscaPorTelaInicialFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="testeDeBuscaPorTelaInicialFalha" duration-ms="16952" started-at="2020-02-13T09:57:03 BRT" finished-at="2020-02-13T09:57:19 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testeDeBuscaPorTelaInicialFalha -->
-        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="finalizaTeste" is-config="true" duration-ms="856" started-at="2020-02-13T09:57:19 BRT" finished-at="2020-02-13T09:57:20 BRT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testeDeBuscaPorTelaInicialFalha status=SUCCESS method=BuscaHome.testeDeBuscaPorTelaInicialFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalizaTeste -->
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="iniciaTeste" is-config="true" duration-ms="9253" started-at="2020-02-13T09:57:20 BRT" finished-at="2020-02-13T09:57:30 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- iniciaTeste -->
-        <test-method status="PASS" signature="testeDeBuscaPorTelaInicialSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="testeDeBuscaPorTelaInicialSucesso" duration-ms="11368" started-at="2020-02-13T09:57:30 BRT" finished-at="2020-02-13T09:57:41 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testeDeBuscaPorTelaInicialSucesso -->
-        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="finalizaTeste" is-config="true" duration-ms="957" started-at="2020-02-13T09:57:41 BRT" finished-at="2020-02-13T09:57:42 BRT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testeDeBuscaPorTelaInicialSucesso status=SUCCESS method=BuscaHome.testeDeBuscaPorTelaInicialSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalizaTeste -->
-        <test-method status="PASS" signature="finalizaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaHome@1d29cf23]" name="finalizaExtendReport" is-config="true" duration-ms="464" started-at="2020-02-13T09:57:42 BRT" finished-at="2020-02-13T09:57:42 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalizaExtendReport -->
-      </class> <!-- br.com.rsinet.hub_tdd.testes.BuscaHome -->
-      <class name="br.com.rsinet.hub_tdd.testes.BuscaLupa">
-        <test-method status="PASS" signature="extendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="extendReport" is-config="true" duration-ms="1" started-at="2020-02-13T09:55:07 BRT" finished-at="2020-02-13T09:55:07 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extendReport -->
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="iniciaTeste" is-config="true" duration-ms="11064" started-at="2020-02-13T09:56:19 BRT" finished-at="2020-02-13T09:56:30 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- iniciaTeste -->
-        <test-method status="PASS" signature="testeDeBuscaPorLupaFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="testeDeBuscaPorLupaFalha" duration-ms="4286" started-at="2020-02-13T09:56:30 BRT" finished-at="2020-02-13T09:56:34 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testeDeBuscaPorLupaFalha -->
-        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="finalizaTeste" is-config="true" duration-ms="1170" started-at="2020-02-13T09:56:34 BRT" finished-at="2020-02-13T09:56:36 BRT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testeDeBuscaPorLupaFalha status=SUCCESS method=BuscaLupa.testeDeBuscaPorLupaFalha()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalizaTeste -->
-        <test-method status="PASS" signature="iniciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="iniciaTeste" is-config="true" duration-ms="9913" started-at="2020-02-13T09:56:36 BRT" finished-at="2020-02-13T09:56:46 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- iniciaTeste -->
-        <test-method status="PASS" signature="testeDeBuscaPorLupaSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="testeDeBuscaPorLupaSucesso" duration-ms="6153" started-at="2020-02-13T09:56:46 BRT" finished-at="2020-02-13T09:56:52 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testeDeBuscaPorLupaSucesso -->
-        <test-method status="PASS" signature="finalizaTeste(org.testng.ITestResult)[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="finalizaTeste" is-config="true" duration-ms="962" started-at="2020-02-13T09:56:52 BRT" finished-at="2020-02-13T09:56:53 BRT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testeDeBuscaPorLupaSucesso status=SUCCESS method=BuscaLupa.testeDeBuscaPorLupaSucesso()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalizaTeste -->
-        <test-method status="PASS" signature="finalizaExtendReport()[pri:0, instance:br.com.rsinet.hub_tdd.testes.BuscaLupa@27a5f880]" name="finalizaExtendReport" is-config="true" duration-ms="103" started-at="2020-02-13T09:57:42 BRT" finished-at="2020-02-13T09:57:42 BRT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalizaExtendReport -->
-      </class> <!-- br.com.rsinet.hub_tdd.testes.BuscaLupa -->
-    </test> <!-- Suite de testes para projeto de automação em TDD -->
-  </suite> <!-- Teste de automação em TDD com TestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -5,7 +5,6 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 
 import br.com.rsinet.hub_tdd.manager.DriverFactory;
 import io.appium.java_client.MobileBy;
@@ -21,7 +20,6 @@ public class CadastroScreen {
 	private WebDriver driver;
 	
 	public CadastroScreen(WebDriver driver) {
-		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
 	
