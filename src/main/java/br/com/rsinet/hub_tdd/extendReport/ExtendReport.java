@@ -1,8 +1,5 @@
 package br.com.rsinet.hub_tdd.extendReport;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 
@@ -14,17 +11,11 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtendReport {
 
-	public static WebDriver driver;
-	public static ExtentHtmlReporter htmlReporter;
-	public static ExtentTest test;
-	public static ExtentReports extent;
-
-	public static String pegaHora() {
-		return new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
-	}
+	private static ExtentHtmlReporter htmlReporter;
+	private static ExtentReports extent;
 
 	public static void setExtent() {
-		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/target/Reports "+pegaHora()+".html");
+		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/target/Reports "+Prints.timestamp()+".html");
 
 		htmlReporter.config().setDocumentTitle("Automatização de Teste");// Titulo do documento
 		htmlReporter.config().setReportName("Reporte TDD");// Nome do reporte
