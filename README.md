@@ -1,10 +1,10 @@
-# Projeto-Appium-TDD
+# Projeto-mobile-TDD
 
 Projeto desenvolvido com o objetivo de testar conhecimentos em relação a desenvolvimento de testes de automação em TDD para dispositivos móveis.
 
 Conteúdo e descrições do projeto:
 
-projeto-appium-tdd
+projeto-mobile-tdd
 
   - src/main/java (pastas onde estão locaizados os pacotes do projeto.)
   
